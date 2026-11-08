@@ -1,0 +1,29 @@
+h2{text-align: center;}
+#A1{
+    overflow:hidden;
+    width: 86mm;
+    height: 54mm;
+    text-align:justify;
+}
+#A2{
+    float:right;
+    width: 86mm;
+    height: 54mm;
+    text-align: left;
+}
+.p1{
+    width: 09mm;
+    height: 04mm; 
+}
+#M1{
+    float:right;
+    height: 5mm; 
+    width: 30mm;
+    
+}
+#M2{
+    float:left;
+    height: 30mm; 
+    width: 22mm;
+    top: 16mm;
+}
