@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Licence 2 - Ressources ESGIS</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script>
+        tailwind.config = { theme: { extend: { fontFamily: { sans: ['Inter', 'sans-serif'] }, colors: { 'brand-dark': '#0f172a', 'brand-gray': '#64748b', 'brand-border': '#e2e8f0', 'brand-red': '#ef4444' } } } }
+    </script>
+    <style>
+        body { background-color: #ffffff; background-image: linear-gradient(to right, rgba(226, 232, 240, 0.4) 1px, transparent 1px), linear-gradient(to bottom, rgba(226, 232, 240, 0.4) 1px, transparent 1px); background-size: 40px 40px; min-height: 100vh; display: flex; flex-direction: column; }
+        .smooth-transition { transition: all 0.2s ease-in-out; }
+    </style>
+</head>
+<body class="font-sans text-brand-dark antialiased">
+    <header class="w-full py-6 px-4 sm:px-6 lg:px-8 max-w-5xl mx-auto flex justify-between items-center bg-transparent">
+        <a href="index.html" class="flex items-center gap-2 group">
+            <div class="flex items-center justify-center w-8 h-8 rounded-full bg-slate-100 group-hover:bg-slate-200 smooth-transition">
+                <i data-lucide="arrow-left" class="w-4 h-4 text-brand-dark"></i>
+            </div>
+            <span class="font-semibold text-brand-dark">Retour</span>
+        </a>
+    </header>
+
+    <main class="flex-grow w-full max-w-4xl mx-auto px-4 sm:px-6 py-8 flex flex-col items-start">
+        <div class="w-full mb-8">
+            <div class="inline-flex items-center gap-2 mb-4 px-3 py-1 bg-emerald-50 text-emerald-600 rounded-full text-xs font-semibold">
+                <i data-lucide="code" class="w-3.5 h-3.5"></i> Licence 2
+            </div>
+            <h1 class="text-3xl md:text-4xl font-bold tracking-tight text-brand-dark leading-tight mb-2">
+                Ressources Licence 2
+            </h1>
+            <p class="text-base text-brand-gray max-w-2xl">
+                Retrouvez ici tous les cours et anciennes épreuves pour les étudiants de deuxième année.
+            </p>
+        </div>
+
+        <div class="w-full space-y-6">
+            <!-- Matière 1 -->
+            <div class="bg-white border border-brand-border rounded-xl overflow-hidden shadow-sm">
+                <div class="p-4 border-b border-brand-border bg-slate-50 flex items-center justify-between">
+                    <div class="flex items-center gap-3">
+                        <div class="w-10 h-10 rounded-lg bg-emerald-100 text-emerald-600 flex items-center justify-center">
+                            <i data-lucide="cpu" class="w-5 h-5"></i>
+                        </div>
+                        <div>
+                            <h2 class="font-bold text-brand-dark">Systèmes d'Exploitation & Réseaux</h2>
+                            <p class="text-xs text-brand-gray">Filière: IRT</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="p-4 grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <div>
+                        <h3 class="text-sm font-semibold text-slate-700 mb-3 flex items-center gap-2"><i data-lucide="book" class="w-4 h-4"></i> Cours & Supports</h3>
+                        <ul class="space-y-2">
+                            <li class="flex items-center justify-between p-2 hover:bg-slate-50 rounded smooth-transition">
+                                <span class="text-sm text-slate-600 flex items-center gap-2"><i data-lucide="file-text" class="w-4 h-4 text-slate-400"></i> Administration Linux</span>
+                                <a href="#" class="text-blue-600 hover:text-blue-700 text-xs font-medium flex items-center gap-1 bg-blue-50 px-2 py-1 rounded"><i data-lucide="download" class="w-3 h-3"></i> PDF</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h3 class="text-sm font-semibold text-slate-700 mb-3 flex items-center gap-2"><i data-lucide="file-check-2" class="w-4 h-4"></i> Anciennes Épreuves</h3>
+                        <ul class="space-y-2">
+                            <li class="flex items-center justify-between p-2 hover:bg-slate-50 rounded smooth-transition">
+                                <span class="text-sm text-slate-600 flex items-center gap-2"><i data-lucide="file-badge" class="w-4 h-4 text-brand-red"></i> Examen 2023</span>
+                                <a href="#" class="text-blue-600 hover:text-blue-700 text-xs font-medium flex items-center gap-1 bg-blue-50 px-2 py-1 rounded"><i data-lucide="download" class="w-3 h-3"></i> PDF</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer class="w-full mt-auto border-t border-slate-100 py-6">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 flex justify-center text-xs text-brand-gray">&copy; 2026 Librairie ESGIS</div>
+    </footer>
+    <script>lucide.createIcons();</script>
+</body>
+</html>

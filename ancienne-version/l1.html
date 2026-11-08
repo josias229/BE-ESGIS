@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Licence 1 - Ressources ESGIS</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: { sans: ['Inter', 'sans-serif'] },
+                    colors: {
+                        'brand-dark': '#0f172a',
+                        'brand-gray': '#64748b',
+                        'brand-light': '#f8fafc',
+                        'brand-border': '#e2e8f0',
+                        'brand-red': '#ef4444',
+                        'dot-irt': '#3b82f6',
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            background-color: #ffffff;
+            background-image: 
+                linear-gradient(to right, rgba(226, 232, 240, 0.4) 1px, transparent 1px), 
+                linear-gradient(to bottom, rgba(226, 232, 240, 0.4) 1px, transparent 1px);
+            background-size: 40px 40px;
+            background-position: center top;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+        .smooth-transition { transition: all 0.2s ease-in-out; }
+    </style>
+</head>
+<body class="font-sans text-brand-dark antialiased">
+    <header class="w-full py-6 px-4 sm:px-6 lg:px-8 max-w-5xl mx-auto flex justify-between items-center bg-transparent">
+        <a href="index.html" class="flex items-center gap-2 group">
+            <div class="flex items-center justify-center w-8 h-8 rounded-full bg-slate-100 group-hover:bg-slate-200 smooth-transition">
+                <i data-lucide="arrow-left" class="w-4 h-4 text-brand-dark"></i>
+            </div>
+            <span class="font-semibold text-brand-dark">Retour</span>
+        </a>
+    </header>
+
+    <main class="flex-grow w-full max-w-4xl mx-auto px-4 sm:px-6 py-8 flex flex-col items-start">
+        <div class="w-full mb-8">
+            <div class="inline-flex items-center gap-2 mb-4 px-3 py-1 bg-blue-50 text-blue-600 rounded-full text-xs font-semibold">
+                <i data-lucide="book-open" class="w-3.5 h-3.5"></i> Licence 1
+            </div>
+            <h1 class="text-3xl md:text-4xl font-bold tracking-tight text-brand-dark leading-tight mb-2">
+                Ressources Licence 1
+            </h1>
+            <p class="text-base text-brand-gray max-w-2xl">
+                Retrouvez ici tous les cours et anciennes épreuves pour les étudiants de première année, provenant de l'archive officielle.
+            </p>
+        </div>
+
+        <div class="w-full space-y-6">
+            
+            <!-- Matière : Bases de Données (Mérise & SQL) -->
+            <div class="bg-white border border-brand-border rounded-xl overflow-hidden shadow-sm">
+                <div class="p-4 border-b border-brand-border bg-slate-50 flex items-center justify-between">
+                    <div class="flex items-center gap-3">
+                        <div class="w-10 h-10 rounded-lg bg-indigo-100 text-indigo-600 flex items-center justify-center">
+                            <i data-lucide="database" class="w-5 h-5"></i>
+                        </div>
+                        <div>
+                            <h2 class="font-bold text-brand-dark">Bases de Données (Mérise & SQL)</h2>
+                            <p class="text-xs text-brand-gray">Filière: IRT</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="p-4 grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <div>
+                        <h3 class="text-sm font-semibold text-slate-700 mb-3 flex items-center gap-2">
+                            <i data-lucide="book" class="w-4 h-4"></i> Cours & Supports
+                        </h3>
+                        <ul class="space-y-2">
+                            <li class="flex items-center justify-between p-2 hover:bg-slate-50 rounded smooth-transition">
+                                <span class="text-sm text-slate-600 flex items-center gap-2 truncate">
+                                    <i data-lucide="file-text" class="w-4 h-4 text-slate-400"></i> Cours de mérise janvier 2022
+                                </span>
+                                <a href="archiveL1/M%C3%A9rise/Cours%20de%20m%C3%A9rise%20janvier%202022.pdf" target="_blank" class="text-blue-600 hover:text-blue-700 text-xs font-medium flex items-center gap-1 bg-blue-50 px-2 py-1 rounded">
+                                    <i data-lucide="download" class="w-3 h-3"></i> PDF
+                                </a>
+                            </li>
+                            <li class="flex items-center justify-between p-2 hover:bg-slate-50 rounded smooth-transition">
+                                <span class="text-sm text-slate-600 flex items-center gap-2 truncate">
+                                    <i data-lucide="file-text" class="w-4 h-4 text-slate-400"></i> Cours langage SQL
+                                </span>
+                                <a href="archiveL1/SQL/Cours_langage%20SQL.pdf" target="_blank" class="text-blue-600 hover:text-blue-700 text-xs font-medium flex items-center gap-1 bg-blue-50 px-2 py-1 rounded">
+                                    <i data-lucide="download" class="w-3 h-3"></i> PDF
+                                </a>
+                            </li>
+                            <li class="flex items-center justify-between p-2 hover:bg-slate-50 rounded smooth-transition">
+                                <span class="text-sm text-slate-600 flex items-center gap-2 truncate">
+                                    <i data-lucide="file-text" class="w-4 h-4 text-slate-400"></i> Langage SQL TCL
+                                </span>
+                                <a href="archiveL1/SQL/Langage_SQL_TCL.pdf" target="_blank" class="text-blue-600 hover:text-blue-700 text-xs font-medium flex items-center gap-1 bg-blue-50 px-2 py-1 rounded">
+                                    <i data-lucide="download" class="w-3 h-3"></i> PDF
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h3 class="text-sm font-semibold text-slate-700 mb-3 flex items-center gap-2">
+                            <i data-lucide="file-check-2" class="w-4 h-4"></i> Travaux Dirigés
+                        </h3>
+                        <ul class="space-y-2">
+                            <li class="flex items-center justify-between p-2 hover:bg-slate-50 rounded smooth-transition">
+                                <span class="text-sm text-slate-600 flex items-center gap-2 truncate">
+                                    <i data-lucide="file-badge" class="w-4 h-4 text-brand-red"></i> TD Merise L1 2025_1
+                                </span>
+                                <a href="archiveL1/M%C3%A9rise/TD%20Merise%20L1%202025_1.pdf" target="_blank" class="text-blue-600 hover:text-blue-700 text-xs font-medium flex items-center gap-1 bg-blue-50 px-2 py-1 rounded">
+                                    <i data-lucide="download" class="w-3 h-3"></i> PDF
+                                </a>
+                            </li>
+                            <li class="flex items-center justify-between p-2 hover:bg-slate-50 rounded smooth-transition">
+                                <span class="text-sm text-slate-600 flex items-center gap-2 truncate">
+                                    <i data-lucide="file-badge" class="w-4 h-4 text-brand-red"></i> Exercices DCL / LMD (Dossier)
+                                </span>
+                                <a href="archiveL1/SQL/LANGAGE%20SQL/" target="_blank" class="text-slate-600 hover:text-slate-800 text-xs font-medium flex items-center gap-1 bg-slate-100 px-2 py-1 rounded">
+                                    <i data-lucide="folder" class="w-3 h-3"></i> Ouvrir
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Matière : Développement Web (PHP) -->
+            <div class="bg-white border border-brand-border rounded-xl overflow-hidden shadow-sm">
+                <div class="p-4 border-b border-brand-border bg-slate-50 flex items-center justify-between">
+                    <div class="flex items-center gap-3">
+                        <div class="w-10 h-10 rounded-lg bg-orange-100 text-orange-600 flex items-center justify-center">
+                            <i data-lucide="layout" class="w-5 h-5"></i>
+                        </div>
+                        <div>
+                            <h2 class="font-bold text-brand-dark">Développement Web (PHP)</h2>
+                            <p class="text-xs text-brand-gray">Filière: IRT</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="p-4 grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <div>
+                        <h3 class="text-sm font-semibold text-slate-700 mb-3 flex items-center gap-2">
+                            <i data-lucide="book" class="w-4 h-4"></i> Travaux Pratiques
+                        </h3>
+                        <ul class="space-y-2">
+                            <li class="flex items-center justify-between p-2 hover:bg-slate-50 rounded smooth-transition">
+                                <span class="text-sm text-slate-600 flex items-center gap-2 truncate">
+                                    <i data-lucide="file-text" class="w-4 h-4 text-slate-400"></i> Projet Complet Bulletins L1
+                                </span>
+                                <a href="archiveL1/TP%20PHP/Projet_Complet_Bulletins_L1_IRT.pdf" target="_blank" class="text-blue-600 hover:text-blue-700 text-xs font-medium flex items-center gap-1 bg-blue-50 px-2 py-1 rounded">
+                                    <i data-lucide="download" class="w-3 h-3"></i> PDF
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Matière : Mathématiques & Logique -->
+            <div class="bg-white border border-brand-border rounded-xl overflow-hidden shadow-sm">
+                <div class="p-4 border-b border-brand-border bg-slate-50 flex items-center justify-between">
+                    <div class="flex items-center gap-3">
+                        <div class="w-10 h-10 rounded-lg bg-cyan-100 text-cyan-600 flex items-center justify-center">
+                            <i data-lucide="calculator" class="w-5 h-5"></i>
+                        </div>
+                        <div>
+                            <h2 class="font-bold text-brand-dark">Mathématiques & Logique</h2>
+                            <p class="text-xs text-brand-gray">Filière: IRT</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="p-4 grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <div>
+                        <h3 class="text-sm font-semibold text-slate-700 mb-3 flex items-center gap-2">
+                            <i data-lucide="book" class="w-4 h-4"></i> Cours & Supports
+                        </h3>
+                        <ul class="space-y-2">
+                            <li class="flex items-center justify-between p-2 hover:bg-slate-50 rounded smooth-transition">
+                                <span class="text-sm text-slate-600 flex items-center gap-2 truncate">
+                                    <i data-lucide="file-text" class="w-4 h-4 text-slate-400"></i> Fiche révision suites
+                                </span>
+                                <a href="archiveL1/MATHS/fiche_de_revision2_les_suites_numeriques.pdf" target="_blank" class="text-blue-600 hover:text-blue-700 text-xs font-medium flex items-center gap-1 bg-blue-50 px-2 py-1 rounded">
+                                    <i data-lucide="download" class="w-3 h-3"></i> PDF
+                                </a>
+                            </li>
+                            <li class="flex items-center justify-between p-2 hover:bg-slate-50 rounded smooth-transition">
+                                <span class="text-sm text-slate-600 flex items-center gap-2 truncate">
+                                    <i data-lucide="file-text" class="w-4 h-4 text-slate-400"></i> Autour des suites
+                                </span>
+                                <a href="archiveL1/MATHS/autour_de_suites_generalites_01e.pdf" target="_blank" class="text-blue-600 hover:text-blue-700 text-xs font-medium flex items-center gap-1 bg-blue-50 px-2 py-1 rounded">
+                                    <i data-lucide="download" class="w-3 h-3"></i> PDF
+                                </a>
+                            </li>
+                            <li class="flex items-center justify-between p-2 hover:bg-slate-50 rounded smooth-transition">
+                                <span class="text-sm text-slate-600 flex items-center gap-2 truncate">
+                                    <i data-lucide="file-text" class="w-4 h-4 text-slate-400"></i> Cours Logique Partie 2
+                                </span>
+                                <a href="archiveL1/LOGIQUE/cours%20de%20logique%20partie%202.pdf" target="_blank" class="text-blue-600 hover:text-blue-700 text-xs font-medium flex items-center gap-1 bg-blue-50 px-2 py-1 rounded">
+                                    <i data-lucide="download" class="w-3 h-3"></i> PDF
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h3 class="text-sm font-semibold text-slate-700 mb-3 flex items-center gap-2">
+                            <i data-lucide="file-check-2" class="w-4 h-4"></i> Travaux Dirigés
+                        </h3>
+                        <ul class="space-y-2">
+                            <li class="flex items-center justify-between p-2 hover:bg-slate-50 rounded smooth-transition">
+                                <span class="text-sm text-slate-600 flex items-center gap-2 truncate">
+                                    <i data-lucide="file-badge" class="w-4 h-4 text-brand-red"></i> TD Suites
+                                </span>
+                                <a href="archiveL1/MATHS/TD-Suites.pdf" target="_blank" class="text-blue-600 hover:text-blue-700 text-xs font-medium flex items-center gap-1 bg-blue-50 px-2 py-1 rounded">
+                                    <i data-lucide="download" class="w-3 h-3"></i> PDF
+                                </a>
+                            </li>
+                            <li class="flex items-center justify-between p-2 hover:bg-slate-50 rounded smooth-transition">
+                                <span class="text-sm text-slate-600 flex items-center gap-2 truncate">
+                                    <i data-lucide="file-badge" class="w-4 h-4 text-brand-red"></i> Exercices Suites Num.
+                                </span>
+                                <a href="archiveL1/MATHS/suites_numeriques_exercices.pdf" target="_blank" class="text-blue-600 hover:text-blue-700 text-xs font-medium flex items-center gap-1 bg-blue-50 px-2 py-1 rounded">
+                                    <i data-lucide="download" class="w-3 h-3"></i> PDF
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Matière : TEEO (Technique d'Expression) -->
+            <div class="bg-white border border-brand-border rounded-xl overflow-hidden shadow-sm">
+                <div class="p-4 border-b border-brand-border bg-slate-50 flex items-center justify-between">
+                    <div class="flex items-center gap-3">
+                        <div class="w-10 h-10 rounded-lg bg-pink-100 text-pink-600 flex items-center justify-center">
+                            <i data-lucide="message-square" class="w-5 h-5"></i>
+                        </div>
+                        <div>
+                            <h2 class="font-bold text-brand-dark">Techniques d'Expression (TEEO)</h2>
+                            <p class="text-xs text-brand-gray">Filière: IRT</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="p-4 grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <div>
+                        <h3 class="text-sm font-semibold text-slate-700 mb-3 flex items-center gap-2">
+                            <i data-lucide="book" class="w-4 h-4"></i> Cours & Supports
+                        </h3>
+                        <ul class="space-y-2">
+                            <li class="flex items-center justify-between p-2 hover:bg-slate-50 rounded smooth-transition">
+                                <span class="text-sm text-slate-600 flex items-center gap-2 truncate">
+                                    <i data-lucide="file-text" class="w-4 h-4 text-slate-400"></i> Cours TEEO 24-25
+                                </span>
+                                <a href="archiveL1/TEEO/Cours%20TEEO%202024%202025.pdf" target="_blank" class="text-blue-600 hover:text-blue-700 text-xs font-medium flex items-center gap-1 bg-blue-50 px-2 py-1 rounded">
+                                    <i data-lucide="download" class="w-3 h-3"></i> PDF
+                                </a>
+                            </li>
+                            <li class="flex items-center justify-between p-2 hover:bg-slate-50 rounded smooth-transition">
+                                <span class="text-sm text-slate-600 flex items-center gap-2 truncate">
+                                    <i data-lucide="file-text" class="w-4 h-4 text-slate-400"></i> Lettre de Motivation (Exposé)
+                                </span>
+                                <a href="archiveL1/TEEO/EXPOSE%20LETTRE%20DE%20MOTIVATION.pdf" target="_blank" class="text-blue-600 hover:text-blue-700 text-xs font-medium flex items-center gap-1 bg-blue-50 px-2 py-1 rounded">
+                                    <i data-lucide="download" class="w-3 h-3"></i> PDF
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h3 class="text-sm font-semibold text-slate-700 mb-3 flex items-center gap-2">
+                            <i data-lucide="folder-open" class="w-4 h-4"></i> Dossiers d'exercices
+                        </h3>
+                        <ul class="space-y-2">
+                            <li class="flex items-center justify-between p-2 hover:bg-slate-50 rounded smooth-transition">
+                                <span class="text-sm text-slate-600 flex items-center gap-2 truncate">
+                                    <i data-lucide="folder" class="w-4 h-4 text-slate-400"></i> Exercices TEEO (CV, CR)
+                                </span>
+                                <a href="archiveL1/TEEO/EXO%20TEEO/" target="_blank" class="text-slate-600 hover:text-slate-800 text-xs font-medium flex items-center gap-1 bg-slate-100 px-2 py-1 rounded">
+                                    <i data-lucide="folder" class="w-3 h-3"></i> Ouvrir
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Matière : SIE & Réseaux -->
+            <div class="bg-white border border-brand-border rounded-xl overflow-hidden shadow-sm">
+                <div class="p-4 border-b border-brand-border bg-slate-50 flex items-center justify-between">
+                    <div class="flex items-center gap-3">
+                        <div class="w-10 h-10 rounded-lg bg-teal-100 text-teal-600 flex items-center justify-center">
+                            <i data-lucide="network" class="w-5 h-5"></i>
+                        </div>
+                        <div>
+                            <h2 class="font-bold text-brand-dark">SIE & Réseaux</h2>
+                            <p class="text-xs text-brand-gray">Filière: IRT</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="p-4 grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <div>
+                        <h3 class="text-sm font-semibold text-slate-700 mb-3 flex items-center gap-2">
+                            <i data-lucide="book" class="w-4 h-4"></i> Cours & Supports
+                        </h3>
+                        <ul class="space-y-2">
+                            <li class="flex items-center justify-between p-2 hover:bg-slate-50 rounded smooth-transition">
+                                <span class="text-sm text-slate-600 flex items-center gap-2 truncate">
+                                    <i data-lucide="file-text" class="w-4 h-4 text-slate-400"></i> Bases Réseaux Informatiques
+                                </span>
+                                <a href="archiveL1/RESEAU/Bases%20de%20r%C3%A9seaux%20nformatiques.pdf" target="_blank" class="text-blue-600 hover:text-blue-700 text-xs font-medium flex items-center gap-1 bg-blue-50 px-2 py-1 rounded">
+                                    <i data-lucide="download" class="w-3 h-3"></i> PDF
+                                </a>
+                            </li>
+                            <li class="flex items-center justify-between p-2 hover:bg-slate-50 rounded smooth-transition">
+                                <span class="text-sm text-slate-600 flex items-center gap-2 truncate">
+                                    <i data-lucide="file-text" class="w-4 h-4 text-slate-400"></i> Système d'Information Chap I
+                                </span>
+                                <a href="archiveL1/SIE/CHAP_I_SYSTEME_D_INFORMATION_2024-2025.pdf" target="_blank" class="text-blue-600 hover:text-blue-700 text-xs font-medium flex items-center gap-1 bg-blue-50 px-2 py-1 rounded">
+                                    <i data-lucide="download" class="w-3 h-3"></i> PDF
+                                </a>
+                            </li>
+                            <li class="flex items-center justify-between p-2 hover:bg-slate-50 rounded smooth-transition">
+                                <span class="text-sm text-slate-600 flex items-center gap-2 truncate">
+                                    <i data-lucide="file-text" class="w-4 h-4 text-slate-400"></i> Système d'Information Chap II
+                                </span>
+                                <a href="archiveL1/SIE/CHAP_II_SYSTEME_D_INFORMATION_2024-2025.pdf" target="_blank" class="text-blue-600 hover:text-blue-700 text-xs font-medium flex items-center gap-1 bg-blue-50 px-2 py-1 rounded">
+                                    <i data-lucide="download" class="w-3 h-3"></i> PDF
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Epreuves Générales -->
+            <div class="bg-white border border-brand-border rounded-xl overflow-hidden shadow-sm">
+                <div class="p-4 border-b border-brand-border bg-slate-50 flex items-center justify-between">
+                    <div class="flex items-center gap-3">
+                        <div class="w-10 h-10 rounded-lg bg-red-100 text-red-600 flex items-center justify-center">
+                            <i data-lucide="folder-check" class="w-5 h-5"></i>
+                        </div>
+                        <div>
+                            <h2 class="font-bold text-brand-dark">Archives & Dossiers Globaux (ALGO, Epreuves L1)</h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="p-4">
+                    <ul class="space-y-2">
+                        <li class="flex items-center justify-between p-2 hover:bg-slate-50 rounded smooth-transition">
+                            <span class="text-sm text-slate-600 flex items-center gap-2 truncate">
+                                <i data-lucide="folder" class="w-4 h-4 text-slate-400"></i> Dossier Algorithmique & Langage C (Projets CodeBlocks)
+                            </span>
+                            <a href="archiveL1/ALGO/" target="_blank" class="text-slate-600 hover:text-slate-800 text-xs font-medium flex items-center gap-1 bg-slate-100 px-2 py-1 rounded">
+                                <i data-lucide="folder" class="w-3 h-3"></i> Ouvrir
+                            </a>
+                        </li>
+                        <li class="flex items-center justify-between p-2 hover:bg-slate-50 rounded smooth-transition">
+                            <span class="text-sm text-slate-600 flex items-center gap-2 truncate">
+                                <i data-lucide="folder" class="w-4 h-4 text-slate-400"></i> Dossier Épreuves L1
+                            </span>
+                            <a href="archiveL1/Epreuve_L1/" target="_blank" class="text-slate-600 hover:text-slate-800 text-xs font-medium flex items-center gap-1 bg-slate-100 px-2 py-1 rounded">
+                                <i data-lucide="folder" class="w-3 h-3"></i> Ouvrir
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <footer class="w-full mt-auto border-t border-slate-100 py-6">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 flex justify-center text-xs text-brand-gray">
+            &copy; 2026 Librairie ESGIS
+        </div>
+    </footer>
+    <script>lucide.createIcons();</script>
+</body>
+</html>
