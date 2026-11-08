@@ -1,0 +1,20 @@
+## Données personnelles / hors sujet (14)
+  COURS ET EPREUVES L2/Lettre_de_motivation_DINGNANOU.pdf
+  L1 - Matières/Circuits logiques programmables/Circuits logiques programmables - Cours/ANIP_DOC_3724021.pdf
+  L1 - Matières/Concept des bases de données relationnelles/Concept des BDR - Exercices/Grille L1IRT_sem2-G1_ 2023-2024.pdf
+  L1 - Matières/Emploi_du_temps 28_Octobre  _2024 L2IRT.pdf
+  L1 - Matières/LISTES DES APPRENANTS L1 IRT GROUPE 2 -ESGIS (remplir) (Enregistré automatiquement).xlsx 06.05.2026.xlsx
+  L1 - Matières/LISTES DES APPRENANTS L1 IRT GROUPE 2 -ESGIS (remplir).xlsx
+  L1 - Matières/Techniques d'expressions écrites et orales/Techniques d'expressions écrites et orales - Images/Grille L1IRT_sem2-G1-_ 2023-2024.pdf
+  archiveL1/Epreuve_L1/TEEO/AKPOVI Edgard.docx
+  archiveL1/HTML/NOUKPO Vertueux L1 IRT.pdf
+  archiveL1/MEMOIRE 24-25/Jury Licence IRT - Juin 2025_Feuille1.pdf
+  archiveL1/MEMOIRE 24-25/Jury Licence IRT - Juin 2025_Feuille2.pdf
+  archiveL1/MEMOIRE 24-25/Jury Licence IRT - Juin 2025_Feuille3.pdf
+  archiveL1/MEMOIRE 24-25/Jury Licence IRT - Juin 2025_Feuille4.pdf
+  archiveL1/REGLEMENT_ESGIS_CUP_2024_2025_revised.pdf
+
+## Trop volumineux pour GitHub (> 95 Mo) (2)
+  L1 - Matières/Architecture des systèmes d'exploitation.rar
+  archiveL1/SQL/LANGAGE SQL/ORACLE/sqldeveloper-21.2.0.187.1842-x64.zip
+

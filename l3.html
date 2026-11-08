@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <title>Licence 3 - Ressources ESGIS</title>
+    <meta name="description" content="Épreuves et cours de Licence 3 à l'ESGIS.">
+    <meta name="theme-color" content="#0f172a">
+    <link rel="icon" href="logo.png">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="assets/config.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <link rel="stylesheet" href="assets/katex/katex.min.css">
+    <link rel="stylesheet" href="assets/style.css">
+</head>
+<body class="font-sans text-brand-dark antialiased" data-page="niveau" data-niveau="L3">
+    <header class="w-full py-4 sm:py-6 px-4 sm:px-6 lg:px-8 max-w-5xl mx-auto flex justify-between items-center gap-3 bg-transparent">
+        <a href="index.html" class="flex items-center gap-2 group">
+            <div class="flex items-center justify-center w-8 h-8 rounded-full bg-slate-100 group-hover:bg-slate-200 smooth-transition">
+                <i data-lucide="arrow-left" class="w-4 h-4 text-brand-dark"></i>
+            </div>
+            <span class="font-semibold text-brand-dark">Accueil</span>
+        </a>
+        <div class="flex items-center gap-2">
+            <nav class="flex items-center bg-white border border-brand-border rounded p-0.5 text-xs font-semibold" aria-label="Niveaux">
+                <a href="l1.html" class="px-2.5 py-1.5 rounded text-slate-500 hover:text-brand-dark hover:bg-slate-50" >L1</a>
+                <a href="l2.html" class="px-2.5 py-1.5 rounded text-slate-500 hover:text-brand-dark hover:bg-slate-50" >L2</a>
+                <a href="l3.html" class="px-2.5 py-1.5 rounded bg-purple-600 text-white" aria-current="page">L3</a>
+            </nav>
+            <button type="button" data-modale="soumettre" class="bg-brand-dark hover:bg-slate-800 text-white text-sm font-medium py-2 px-3 rounded flex items-center gap-2 smooth-transition focus-ring" aria-label="Soumettre une ressource">
+                <i data-lucide="plus" class="w-4 h-4" stroke-width="2"></i><span class="hidden sm:inline">Soumettre</span>
+            </button>
+        </div>
+    </header>
+
+    <main id="app" class="flex-grow w-full max-w-4xl mx-auto px-4 sm:px-6 py-4 sm:py-8 flex flex-col items-start">
+        <p class="text-sm text-brand-gray">Chargement des matières…</p>
+        <noscript><p class="mt-4 text-sm text-brand-red">Activez JavaScript pour afficher les ressources.</p></noscript>
+    </main>
+
+    <footer class="w-full mt-auto border-t border-slate-100 py-6">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 flex flex-col sm:flex-row justify-between items-center gap-3 text-xs text-brand-gray">
+            <span>&copy; 2026 Librairie ESGIS</span>
+            <div class="flex items-center gap-4">
+                <a data-lien="soumission" target="_blank" rel="noopener" class="hover:text-brand-dark smooth-transition">Nous contacter</a>
+                <a href="#" data-modale="confidentialite" class="hover:text-brand-dark smooth-transition">Confidentialité</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="assets/catalogue.js"></script>
+    <script src="assets/contenus.js"></script>
+    <script src="assets/app.js"></script>
+</body>
+</html>

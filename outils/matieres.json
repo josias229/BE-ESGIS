@@ -1,0 +1,2381 @@
+{
+ "_lisezmoi": "Liste officielle des matières par niveau. 'dossiers' = motifs de chemins rattachés d'office à la matière ; 'motscles' = termes cherchés DANS le contenu des documents (et dans le nom) pour vérifier ou corriger le classement. Les motifs sont des expressions régulières, sans accents, en minuscules.",
+ "L1": {
+  "nom": "Licence 1",
+  "filiere": "IRT · Informatique, réseaux et télécoms",
+  "groupes": [
+   {
+    "id": "maths",
+    "nom": "Mathématiques",
+    "icone": "sigma",
+    "couleur": "cyan"
+   },
+   {
+    "id": "prog",
+    "nom": "Algorithmique & programmation",
+    "icone": "code",
+    "couleur": "violet"
+   },
+   {
+    "id": "bd",
+    "nom": "Bases de données & systèmes d'information",
+    "icone": "database",
+    "couleur": "indigo"
+   },
+   {
+    "id": "sys",
+    "nom": "Architecture & systèmes d'exploitation",
+    "icone": "cpu",
+    "couleur": "slate"
+   },
+   {
+    "id": "elec",
+    "nom": "Électricité, électronique & réseaux",
+    "icone": "zap",
+    "couleur": "amber"
+   },
+   {
+    "id": "gest",
+    "nom": "Gestion, langues & communication",
+    "icone": "briefcase",
+    "couleur": "emerald"
+   }
+  ],
+  "matieres": [
+   {
+    "id": "l1-algebre-logique",
+    "groupe": "maths",
+    "nom": "Algèbre : logique élémentaire et calcul algébrique",
+    "court": "Logique & calcul algébrique",
+    "icone": "brackets",
+    "dossiers": [
+     "algebre - logique",
+     "/logique/",
+     "algebre fond"
+    ],
+    "nom_motifs": [
+     "logique",
+     "algebre fond",
+     "calcul algebrique"
+    ],
+    "motscles": [
+     "tautologie",
+     "proposition",
+     "quantificateur",
+     "contraposee",
+     "recurrence",
+     "injective",
+     "surjective",
+     "bijective",
+     "relation d.equivalence",
+     "loi de composition",
+     "\\bgroupe\\b.{0,40}(abelien|commutatif|neutre)",
+     "anneau",
+     "polynome",
+     "pgcd",
+     "division euclidienne",
+     "ensemble des parties",
+     "produit cartesien",
+     "nombres? complexes?",
+     "formule du binome",
+     "somme des termes",
+     "symbole somme"
+    ]
+   },
+   {
+    "id": "l1-algebre-lineaire",
+    "groupe": "maths",
+    "nom": "Algèbre linéaire",
+    "icone": "grid-3x3",
+    "dossiers": [
+     "algebre lineaire"
+    ],
+    "nom_motifs": [
+     "algebre lin",
+     "algebre i\\b"
+    ],
+    "motscles": [
+     "espace vectoriel",
+     "sous.espace",
+     "application lineaire",
+     "matrice",
+     "determinant",
+     "\\brang\\b",
+     "famille libre",
+     "famille generatrice",
+     "\\bbase\\b.{0,30}(canonique|de r)",
+     "noyau",
+     "image d.une",
+     "valeurs? propres?",
+     "vecteurs? propres?",
+     "diagonalis",
+     "systeme lineaire",
+     "pivot de gauss",
+     "inverse d.une matrice",
+     "trace"
+    ]
+   },
+   {
+    "id": "l1-reels",
+    "groupe": "maths",
+    "nom": "Ensemble des réels",
+    "icone": "infinity",
+    "dossiers": [
+     "ensemble des reels",
+     "ensemble des ir"
+    ],
+    "nom_motifs": [
+     "ensemble des (reels|ir)",
+     "ens\\.? des reels",
+     "ensembles? reels",
+     "suites?",
+     "autour de suites"
+    ],
+    "motscles": [
+     "borne superieure",
+     "borne inferieure",
+     "majorant",
+     "minorant",
+     "majoree",
+     "partie entiere",
+     "valeur absolue",
+     "archimedien",
+     "densite",
+     "\\bdense\\b",
+     "suite adjacente",
+     "suites? de cauchy",
+     "convergente",
+     "monotone",
+     "inegalite triangulaire",
+     "intervalle"
+    ]
+   },
+   {
+    "id": "l1-fvr",
+    "groupe": "maths",
+    "nom": "Analyse : fonctions réelles d'une variable réelle",
+    "court": "Fonctions réelles",
+    "icone": "spline",
+    "dossiers": [
+     "fonctions reelles d.une variable",
+     "/fvr/"
+    ],
+    "nom_motifs": [
+     "fonction[s]? (reelle|numerique)",
+     "\\bfvr\\b",
+     "variable reelle",
+     "fn (numerique|variable)",
+     "fonction g4"
+    ],
+    "motscles": [
+     "limite",
+     "continuite",
+     "continue en",
+     "derivable",
+     "derivee",
+     "accroissements finis",
+     "theoreme de rolle",
+     "developpement limite",
+     "asymptote",
+     "tableau de variation",
+     "fonction reciproque",
+     "prolongement par continuite",
+     "branche infinie",
+     "convexe",
+     "equivalent"
+    ]
+   },
+   {
+    "id": "l1-integral",
+    "groupe": "maths",
+    "nom": "Analyse : calcul intégral et équations différentielles",
+    "court": "Calcul intégral & éq. diff.",
+    "icone": "sigma",
+    "dossiers": [
+     "calcul integral",
+     "integrale eq diff"
+    ],
+    "nom_motifs": [
+     "integral",
+     "eq\\.? ?diff",
+     "equation diff",
+     "calcul diff"
+    ],
+    "motscles": [
+     "primitive",
+     "integrale",
+     "integration par parties",
+     "changement de variable",
+     "equation differentielle",
+     "y.?.?\\s*\\+",
+     "solution generale",
+     "solution particuliere",
+     "decomposition en elements simples",
+     "fraction rationnelle",
+     "riemann",
+     "variation de la constante"
+    ]
+   },
+   {
+    "id": "l1-algo",
+    "groupe": "prog",
+    "nom": "Algorithmique de base",
+    "icone": "git-branch",
+    "dossiers": [
+     "algorithmique de base",
+     "algo de base",
+     "/algorithme/",
+     "archivel1/algo/"
+    ],
+    "nom_motifs": [
+     "\\balgo",
+     "algorithm"
+    ],
+    "motscles": [
+     "algorithme",
+     "debut",
+     "\\bfin\\b",
+     "tant ?que",
+     "pour .{1,20} faire",
+     "repeter",
+     "si .{1,60} alors",
+     "sinon",
+     "\\blire\\b",
+     "\\becrire\\b",
+     "variables?",
+     "entier",
+     "reel",
+     "booleen",
+     "tableau",
+     "procedure",
+     "fonction .{0,30} retourne",
+     "trace d.execution",
+     "organigramme"
+    ]
+   },
+   {
+    "id": "l1-structures",
+    "groupe": "prog",
+    "nom": "Structures de données",
+    "icone": "list-tree",
+    "dossiers": [
+     "structures de donnees",
+     "structure de donnee"
+    ],
+    "nom_motifs": [
+     "structure[s]?[- ]?(de )?donnee"
+    ],
+    "motscles": [
+     "enregistrement",
+     "pointeur",
+     "liste chainee",
+     "\\bpile\\b",
+     "\\bfile\\b",
+     "arbre",
+     "noeud",
+     "maillon",
+     "allocation dynamique",
+     "\\bsuivant\\b",
+     "empiler",
+     "depiler",
+     "enfiler",
+     "type .{1,30}= ?enregistrement",
+     "tri (a bulles|par selection|par insertion)",
+     "recherche dichotomique"
+    ]
+   },
+   {
+    "id": "l1-c",
+    "groupe": "prog",
+    "nom": "Introduction au langage C",
+    "court": "Langage C",
+    "icone": "terminal",
+    "dossiers": [
+     "introduction au langage c",
+     "langage {1,2}c/"
+    ],
+    "nom_motifs": [
+     "langage c\\b",
+     "langage  c",
+     "examen c",
+     "rattrapage c",
+     "introc",
+     "intro c",
+     "\\bc g4"
+    ],
+    "motscles": [
+     "#include",
+     "printf",
+     "scanf",
+     "int main",
+     "stdio",
+     "malloc",
+     "\\bchar\\b",
+     "\\bstruct\\b",
+     "return 0"
+    ]
+   },
+   {
+    "id": "l1-web",
+    "groupe": "prog",
+    "nom": "HTML, CSS, JavaScript",
+    "icone": "layout-template",
+    "dossiers": [
+     "html, css",
+     "epreuve_l1/html",
+     "archivel1/html",
+     "/dev web/"
+    ],
+    "nom_motifs": [
+     "html",
+     "\\bcss\\b",
+     "javascript",
+     "javascrispt",
+     "\\bjs\\b",
+     "dev web"
+    ],
+    "motscles": [
+     "<html",
+     "balise",
+     "<div",
+     "<form",
+     "<table",
+     "\\bcss\\b",
+     "feuille de style",
+     "javascript",
+     "getelementbyid",
+     "addeventlistener",
+     "\\bdom\\b",
+     "formulaire html",
+     "<a href",
+     "attribut"
+    ]
+   },
+   {
+    "id": "l1-php",
+    "groupe": "prog",
+    "nom": "Langage PHP et MySQL",
+    "court": "PHP & MySQL",
+    "icone": "file-code",
+    "dossiers": [
+     "langage php",
+     "tp php",
+     "/php/"
+    ],
+    "nom_motifs": [
+     "\\bphp\\b",
+     "mysql",
+     "bulletins"
+    ],
+    "motscles": [
+     "<\\?php",
+     "\\$_post",
+     "\\$_get",
+     "\\$_session",
+     "mysqli",
+     "\\bpdo\\b",
+     "\\becho\\b",
+     "phpmyadmin",
+     "mysql_",
+     "\\binclude\\b",
+     "session_start",
+     "\\bphp\\b"
+    ]
+   },
+   {
+    "id": "l1-bd",
+    "groupe": "bd",
+    "nom": "Concept des bases de données relationnelles",
+    "court": "Bases de données relationnelles",
+    "icone": "database",
+    "dossiers": [
+     "concept des bases de donnees",
+     "base de donnee",
+     "archivel1/bd/"
+    ],
+    "nom_motifs": [
+     "base[s]? de donn",
+     "\\bbdr?\\b",
+     "concept des bd",
+     "algebre relationnelle"
+    ],
+    "motscles": [
+     "modele relationnel",
+     "relation",
+     "cle primaire",
+     "cle etrangere",
+     "dependance[s]? fonctionnelle",
+     "forme normale",
+     "\\b[123]fn\\b",
+     "normalis",
+     "algebre relationnelle",
+     "projection",
+     "selection",
+     "jointure",
+     "tuple",
+     "attribut",
+     "sgbd",
+     "schema relationnel",
+     "integrite referentielle"
+    ]
+   },
+   {
+    "id": "l1-sql",
+    "groupe": "bd",
+    "nom": "Langage SQL",
+    "icone": "table",
+    "dossiers": [
+     "langage sql",
+     "archivel1/sql",
+     "epreuve_l1/sql"
+    ],
+    "nom_motifs": [
+     "\\bsql\\b",
+     "outer join",
+     "\\bldd\\b",
+     "\\blmd\\b",
+     "\\bdcl\\b",
+     "mybd"
+    ],
+    "motscles": [
+     "\\bselect\\b",
+     "\\bfrom\\b",
+     "\\bwhere\\b",
+     "create table",
+     "insert into",
+     "update .{1,30} set",
+     "group by",
+     "order by",
+     "\\bjoin\\b",
+     "\\bgrant\\b",
+     "\\brevoke\\b",
+     "alter table",
+     "\\bview\\b",
+     "varchar",
+     "primary key",
+     "foreign key",
+     "oracle",
+     "\\bcount\\(",
+     "having"
+    ]
+   },
+   {
+    "id": "l1-merise",
+    "groupe": "bd",
+    "nom": "Merise",
+    "icone": "workflow",
+    "dossiers": [
+     "/merise",
+     "/merise/"
+    ],
+    "nom_motifs": [
+     "merise",
+     "\\bmcd\\b",
+     "\\bmld\\b"
+    ],
+    "motscles": [
+     "\\bmcd\\b",
+     "\\bmld\\b",
+     "\\bmct\\b",
+     "\\bmot\\b",
+     "\\bmpd\\b",
+     "entite",
+     "association",
+     "cardinalite",
+     "dictionnaire de donnees",
+     "regles de gestion",
+     "graphe des dependances",
+     "merise",
+     "identifiant",
+     "propriete",
+     "occurrence"
+    ]
+   },
+   {
+    "id": "l1-sie",
+    "groupe": "bd",
+    "nom": "Introduction aux systèmes d'information d'entreprise",
+    "court": "Systèmes d'information d'entreprise",
+    "icone": "building-2",
+    "dossiers": [
+     "systemes d.information d.entreprise",
+     "/sie/",
+     "archivel1/sie"
+    ],
+    "nom_motifs": [
+     "systeme[s]? d.information",
+     "\\bsie\\b",
+     "intro aux si"
+    ],
+    "motscles": [
+     "systeme d.information",
+     "systeme de pilotage",
+     "systeme operant",
+     "flux d.information",
+     "\\berp\\b",
+     "\\bcrm\\b",
+     "processus metier",
+     "urbanisation",
+     "\\bdsi\\b",
+     "organisation de l.entreprise",
+     "systeme informatique"
+    ]
+   },
+   {
+    "id": "l1-ato",
+    "groupe": "sys",
+    "nom": "Architecture matérielle des ordinateurs",
+    "court": "Architecture des ordinateurs (ATO)",
+    "icone": "hard-drive",
+    "dossiers": [
+     "architecture materielle",
+     "/ato/",
+     "archivel1/ato"
+    ],
+    "nom_motifs": [
+     "\\bato\\b",
+     "architecture materielle",
+     "karnaugh"
+    ],
+    "motscles": [
+     "processeur",
+     "\\bcpu\\b",
+     "\\bual\\b",
+     "registre",
+     "\\bbus\\b",
+     "memoire (vive|morte|cache)",
+     "\\bram\\b",
+     "\\brom\\b",
+     "binaire",
+     "hexadecimal",
+     "octal",
+     "complement a (1|2|deux)",
+     "virgule flottante",
+     "ieee",
+     "algebre de boole",
+     "karnaugh",
+     "carte mere",
+     "jeu d.instructions",
+     "von neumann"
+    ]
+   },
+   {
+    "id": "l1-ase",
+    "groupe": "sys",
+    "nom": "Architecture des systèmes d'exploitation",
+    "court": "Architecture des SE",
+    "icone": "layers",
+    "dossiers": [
+     "architecture des systemes d.exploitation",
+     "archictecture des systemes"
+    ],
+    "nom_motifs": [
+     "architecture des systemes d",
+     "archictecture"
+    ],
+    "motscles": [
+     "systeme d.exploitation",
+     "noyau",
+     "kernel",
+     "processus",
+     "ordonnancement",
+     "\\bthread\\b",
+     "memoire virtuelle",
+     "pagination",
+     "segmentation",
+     "interruption",
+     "appel systeme",
+     "interblocage",
+     "semaphore",
+     "\\bfifo\\b",
+     "round robin",
+     "systeme de fichiers",
+     "multitache"
+    ]
+   },
+   {
+    "id": "l1-linux",
+    "groupe": "sys",
+    "nom": "Système d'exploitation Linux",
+    "court": "Linux",
+    "icone": "server",
+    "dossiers": [
+     "systeme d.exploitation linux"
+    ],
+    "nom_motifs": [
+     "linux",
+     "\\bshell\\b",
+     "\\bbash\\b"
+    ],
+    "motscles": [
+     "\\bls\\b",
+     "\\bchmod\\b",
+     "\\bchown\\b",
+     "\\bmkdir\\b",
+     "\\bcd\\b",
+     "\\bgrep\\b",
+     "\\bsudo\\b",
+     "/etc/",
+     "/home",
+     "\\bbash\\b",
+     "shell",
+     "\\bvi\\b",
+     "\\bnano\\b",
+     "linux",
+     "ubuntu",
+     "debian",
+     "\\bapt\\b",
+     "terminal",
+     "arborescence",
+     "\\bpwd\\b"
+    ]
+   },
+   {
+    "id": "l1-windows",
+    "groupe": "sys",
+    "nom": "Système d'exploitation Windows",
+    "court": "Windows",
+    "icone": "monitor",
+    "dossiers": [
+     "systeme d.exploitation windows",
+     "ms et windows"
+    ],
+    "nom_motifs": [
+     "windows",
+     "\\bms\\b",
+     "partiel se",
+     "\\bse\\b"
+    ],
+    "motscles": [
+     "windows",
+     "ms-dos",
+     "\\bcmd\\b",
+     "invite de commande",
+     "panneau de configuration",
+     "explorateur",
+     "registre",
+     "\\bntfs\\b",
+     "\\bfat32\\b",
+     "gestionnaire des taches",
+     "\\bdir\\b",
+     "\\bcopy\\b",
+     "\\bbatch\\b",
+     "\\.bat\\b",
+     "partition",
+     "compte utilisateur"
+    ]
+   },
+   {
+    "id": "l1-clp",
+    "groupe": "sys",
+    "nom": "Circuits logiques programmables",
+    "court": "Circuits logiques (CLP)",
+    "icone": "circuit-board",
+    "dossiers": [
+     "circuits logiques programmables",
+     "/clp/",
+     "archivel1/clp"
+    ],
+    "nom_motifs": [
+     "\\bclp\\b",
+     "circuits? logiques?"
+    ],
+    "motscles": [
+     "porte logique",
+     "table de verite",
+     "bascule",
+     "compteur",
+     "multiplexeur",
+     "demultiplexeur",
+     "decodeur",
+     "codeur",
+     "karnaugh",
+     "\\bnand\\b",
+     "\\bnor\\b",
+     "\\bxor\\b",
+     "logigramme",
+     "fpga",
+     "\\bpld\\b",
+     "\\bpal\\b",
+     "vhdl",
+     "registre a decalage",
+     "circuit combinatoire",
+     "sequentiel"
+    ]
+   },
+   {
+    "id": "l1-electricite",
+    "groupe": "elec",
+    "nom": "Électricité générale",
+    "icone": "zap",
+    "dossiers": [
+     "electricite generale",
+     "/electricite/"
+    ],
+    "nom_motifs": [
+     "electricite"
+    ],
+    "motscles": [
+     "courant",
+     "tension",
+     "resistance",
+     "loi d.ohm",
+     "kirchhoff",
+     "puissance",
+     "condensateur",
+     "bobine",
+     "inductance",
+     "thevenin",
+     "norton",
+     "millman",
+     "diviseur de tension",
+     "dipole",
+     "generateur",
+     "impedance",
+     "regime sinusoidal",
+     "\\bvolt",
+     "\\bohm"
+    ]
+   },
+   {
+    "id": "l1-electronique",
+    "groupe": "elec",
+    "nom": "Électronique analogique",
+    "icone": "activity",
+    "dossiers": [
+     "electronique analogique",
+     "epreuve_l1/electronique"
+    ],
+    "nom_motifs": [
+     "electroni"
+    ],
+    "motscles": [
+     "diode",
+     "transistor",
+     "amplificateur",
+     "\\baop\\b",
+     "amplificateur operationnel",
+     "redressement",
+     "redresseur",
+     "filtre",
+     "polarisation",
+     "jonction",
+     "zener",
+     "gain",
+     "bande passante",
+     "semi.conducteur",
+     "bipolaire"
+    ]
+   },
+   {
+    "id": "l1-reseaux",
+    "groupe": "elec",
+    "nom": "Bases des réseaux informatiques",
+    "court": "Réseaux informatiques",
+    "icone": "network",
+    "dossiers": [
+     "bases des reseaux informatiques",
+     "base de reseaux",
+     "archivel1/reseau"
+    ],
+    "nom_motifs": [
+     "reseau",
+     "\\bbri\\b",
+     "bases r i"
+    ],
+    "motscles": [
+     "adresse ip",
+     "masque",
+     "sous.reseau",
+     "\\bosi\\b",
+     "tcp/ip",
+     "routeur",
+     "commutateur",
+     "switch",
+     "\\bhub\\b",
+     "topologie",
+     "\\blan\\b",
+     "\\bwan\\b",
+     "\\bman\\b",
+     "cable",
+     "ethernet",
+     "\\bmac\\b",
+     "protocole",
+     "\\bdns\\b",
+     "\\bdhcp\\b",
+     "classe [abc]",
+     "cidr",
+     "paquet",
+     "trame"
+    ]
+   },
+   {
+    "id": "l1-compta",
+    "groupe": "gest",
+    "nom": "Introduction à la comptabilité",
+    "court": "Comptabilité",
+    "icone": "receipt",
+    "dossiers": [
+     "introduction a la comptabilite",
+     "/compta/"
+    ],
+    "nom_motifs": [
+     "compta"
+    ],
+    "motscles": [
+     "bilan",
+     "compte de resultat",
+     "debit",
+     "credit",
+     "journal",
+     "grand livre",
+     "balance",
+     "\\btva\\b",
+     "amortissement",
+     "actif",
+     "passif",
+     "capitaux propres",
+     "charges",
+     "produits",
+     "ohada",
+     "syscohada",
+     "ecriture comptable",
+     "facture",
+     "fournisseur",
+     "client",
+     "\\bf ?cfa\\b"
+    ]
+   },
+   {
+    "id": "l1-eco",
+    "groupe": "gest",
+    "nom": "Économie et organisation des entreprises",
+    "court": "Économie & organisation",
+    "icone": "briefcase",
+    "dossiers": [
+     "economie et organisation",
+     "/economie/"
+    ],
+    "nom_motifs": [
+     "econom",
+     "eco entreprise"
+    ],
+    "motscles": [
+     "entreprise",
+     "economie",
+     "marche",
+     "production",
+     "offre",
+     "demande",
+     "\\bpib\\b",
+     "organigramme",
+     "structure (fonctionnelle|divisionnelle|matricielle)",
+     "management",
+     "strategie",
+     "valeur ajoutee",
+     "\\bsarl\\b",
+     "\\bsa\\b",
+     "parties prenantes",
+     "agent economique",
+     "facteurs de production",
+     "chiffre d.affaires"
+    ]
+   },
+   {
+    "id": "l1-bureautique",
+    "groupe": "gest",
+    "nom": "Outils bureautiques",
+    "icone": "sheet",
+    "dossiers": [
+     "outils bureautique",
+     "outils burautique"
+    ],
+    "nom_motifs": [
+     "bureautique",
+     "burautique",
+     "excel",
+     "\\bword\\b"
+    ],
+    "motscles": [
+     "\\bword\\b",
+     "excel",
+     "powerpoint",
+     "tableur",
+     "traitement de texte",
+     "\\bformule\\b",
+     "=somme",
+     "=si\\(",
+     "mise en forme",
+     "publipostage",
+     "cellule",
+     "classeur",
+     "diaporama",
+     "table des matieres",
+     "tableau croise"
+    ]
+   },
+   {
+    "id": "l1-teeo",
+    "groupe": "gest",
+    "nom": "Techniques d'expression écrites et orales",
+    "court": "Techniques d'expression (TEEO)",
+    "icone": "message-square",
+    "dossiers": [
+     "techniques d.expressions",
+     "/teeo/",
+     "archivel1/teeo"
+    ],
+    "nom_motifs": [
+     "teeo",
+     "expression",
+     "compte.rendu",
+     "le.rapport",
+     "lettre de motivation",
+     "\\bcv\\b",
+     "communication"
+    ],
+    "motscles": [
+     "expression",
+     "redaction",
+     "compte rendu",
+     "rapport",
+     "lettre",
+     "\\bcv\\b",
+     "curriculum",
+     "resume",
+     "synthese",
+     "texte",
+     "dissertation",
+     "argument",
+     "prise de parole",
+     "expose oral",
+     "communication",
+     "note de service",
+     "proces.verbal",
+     "contraction de texte"
+    ]
+   },
+   {
+    "id": "l1-anglais",
+    "groupe": "gest",
+    "nom": "Anglais général",
+    "icone": "languages",
+    "dossiers": [
+     "anglais general",
+     "/anglais/"
+    ],
+    "nom_motifs": [
+     "anglais",
+     "english"
+    ],
+    "motscles": [
+     "\\bthe\\b",
+     "\\band\\b",
+     "\\bis\\b",
+     "\\bare\\b",
+     "\\bwrite\\b",
+     "\\banswer\\b",
+     "\\bfollowing\\b",
+     "\\btext\\b",
+     "\\btranslate\\b",
+     "\\bsentences?\\b",
+     "\\bquestions?\\b",
+     "\\bverbs?\\b",
+     "\\btense\\b"
+    ]
+   }
+  ]
+ },
+ "L2": {
+  "nom": "Licence 2",
+  "filiere": "IRT · parcours SI, SRC et AL",
+  "parcours": {
+   "SI": "Sécurité informatique",
+   "SRC": "Systèmes, réseaux & communication",
+   "AL": "Architecture logicielle"
+  },
+  "groupes": [
+   {
+    "id": "s3-maths",
+    "semestre": "S3",
+    "nom": "Mathématiques",
+    "icone": "sigma",
+    "couleur": "cyan"
+   },
+   {
+    "id": "s3-elec-linux",
+    "semestre": "S3",
+    "nom": "Électronique et administration Linux",
+    "icone": "cpu",
+    "couleur": "amber"
+   },
+   {
+    "id": "s3-quanti",
+    "semestre": "S3",
+    "nom": "Outils quantitatifs",
+    "icone": "route",
+    "couleur": "blue"
+   },
+   {
+    "id": "s3-algo",
+    "semestre": "S3",
+    "nom": "Algorithmique avancée et programmation",
+    "icone": "git-branch",
+    "couleur": "violet"
+   },
+   {
+    "id": "s3-poo",
+    "semestre": "S3",
+    "nom": "Programmation orientée objets",
+    "icone": "boxes",
+    "couleur": "rose"
+   },
+   {
+    "id": "s3-langue",
+    "semestre": "S3",
+    "nom": "Langue et communication",
+    "icone": "languages",
+    "couleur": "pink"
+   },
+   {
+    "id": "s3-secu",
+    "semestre": "S3",
+    "nom": "Sécurité et versioning",
+    "icone": "shield",
+    "couleur": "red"
+   },
+   {
+    "id": "s4-teleinfo",
+    "semestre": "S4",
+    "nom": "Téléinformatique et réseaux",
+    "icone": "network",
+    "couleur": "teal"
+   },
+   {
+    "id": "s4-analyse",
+    "semestre": "S4",
+    "nom": "Analyse et modélisation",
+    "icone": "workflow",
+    "couleur": "violet"
+   },
+   {
+    "id": "s4-planif",
+    "semestre": "S4",
+    "nom": "Mathématique et planification de projet",
+    "icone": "kanban",
+    "couleur": "indigo"
+   },
+   {
+    "id": "s4-telecom",
+    "semestre": "S4",
+    "nom": "Introduction à la télécommunication",
+    "icone": "radio-tower",
+    "couleur": "cyan"
+   },
+   {
+    "id": "s4-basniveau",
+    "semestre": "S4",
+    "nom": "Programmation bas niveau et conteneurisation",
+    "icone": "binary",
+    "couleur": "zinc"
+   },
+   {
+    "id": "s4-windows",
+    "semestre": "S4",
+    "nom": "Administration, sécurité & virtualisation Windows",
+    "icone": "monitor",
+    "couleur": "blue"
+   },
+   {
+    "id": "s4-al",
+    "semestre": "S4",
+    "nom": "Développement d'applications (AL)",
+    "icone": "layout-template",
+    "couleur": "orange"
+   },
+   {
+    "id": "s4-compta",
+    "semestre": "S4",
+    "nom": "Outils comptables",
+    "icone": "receipt",
+    "couleur": "green"
+   }
+  ],
+  "matieres": [
+   {
+    "id": "l2-topologie",
+    "groupe": "s3-maths",
+    "nom": "Analyse : topologie, continuité, différentiabilité",
+    "court": "Topologie & différentiabilité",
+    "icone": "spline",
+    "parcours": [
+     "SI",
+     "SRC",
+     "AL"
+    ],
+    "dossiers": [
+     "analyse  topologie",
+     "topologie"
+    ],
+    "nom_motifs": [
+     "topologie",
+     "continuite",
+     "differenti",
+     "cotinuite"
+    ],
+    "motscles": [
+     "topologie",
+     "ouvert",
+     "ferme",
+     "adherence",
+     "interieur",
+     "norme",
+     "espace metrique",
+     "boule ouverte",
+     "compact",
+     "differentiable",
+     "derivees partielles",
+     "gradient",
+     "matrice jacobienne",
+     "hessienne",
+     "extremum",
+     "fonction de plusieurs variables",
+     "distance",
+     "continuite uniforme"
+    ]
+   },
+   {
+    "id": "l2-analyse-suites",
+    "groupe": "s3-maths",
+    "nom": "Analyse : suites, séries, intégrales",
+    "court": "Suites, séries, intégrales",
+    "icone": "sigma",
+    "parcours": [
+     "SI",
+     "SRC",
+     "AL"
+    ],
+    "dossiers": [],
+    "nom_motifs": [
+     "suite[s]?,? ?series",
+     "series",
+     "analyse.{0,3}suite",
+     "analyse"
+    ],
+    "motscles": [
+     "serie",
+     "serie entiere",
+     "rayon de convergence",
+     "critere de d.alembert",
+     "critere de cauchy",
+     "serie de fourier",
+     "convergence (simple|uniforme|normale)",
+     "suite de fonctions",
+     "integrale generalisee",
+     "integrale impropre",
+     "somme partielle",
+     "serie geometrique",
+     "serie alternee"
+    ]
+   },
+   {
+    "id": "l2-electronique",
+    "groupe": "s3-elec-linux",
+    "nom": "Électronique numérique",
+    "icone": "circuit-board",
+    "parcours": [
+     "SI",
+     "SRC",
+     "AL"
+    ],
+    "dossiers": [
+     "dossier l2irt/electronique",
+     "electronique numerique"
+    ],
+    "nom_motifs": [
+     "electronique",
+     "ift1215"
+    ],
+    "motscles": [
+     "porte logique",
+     "table de verite",
+     "bascule",
+     "compteur",
+     "multiplexeur",
+     "decodeur",
+     "karnaugh",
+     "algebre de boole",
+     "registre",
+     "\\bnand\\b",
+     "\\bxor\\b",
+     "circuit combinatoire",
+     "circuit sequentiel",
+     "chronogramme",
+     "\\bcan\\b",
+     "\\bcna\\b",
+     "jk",
+     "d flip"
+    ]
+   },
+   {
+    "id": "l2-linux",
+    "groupe": "s3-elec-linux",
+    "nom": "Bases de l'administration Linux",
+    "court": "Administration Linux",
+    "icone": "server",
+    "parcours": [
+     "SI",
+     "SRC",
+     "AL"
+    ],
+    "dossiers": [
+     "dossier l2irt/linux",
+     "bases de l.administration linux"
+    ],
+    "nom_motifs": [
+     "linux",
+     "shell",
+     "editeur vi",
+     "alias et variable",
+     "gestion des utilisateurs",
+     "manipulations",
+     "changement d",
+     "permissions",
+     "paquets",
+     "\\bvi\\b"
+    ],
+    "motscles": [
+     "\\bchmod\\b",
+     "\\bchown\\b",
+     "useradd",
+     "usermod",
+     "groupadd",
+     "/etc/passwd",
+     "/etc/shadow",
+     "\\bsudo\\b",
+     "\\bapt\\b",
+     "\\bdpkg\\b",
+     "\\byum\\b",
+     "\\bgrep\\b",
+     "\\bsed\\b",
+     "\\bawk\\b",
+     "\\bcrontab\\b",
+     "\\bmount\\b",
+     "\\bfstab\\b",
+     "\\bsystemctl\\b",
+     "\\bbash\\b",
+     "variable d.environnement",
+     "\\balias\\b",
+     "\\bumask\\b",
+     "\\btar\\b",
+     "\\bps\\b",
+     "\\bkill\\b"
+    ]
+   },
+   {
+    "id": "l2-ro",
+    "groupe": "s3-quanti",
+    "nom": "Recherche opérationnelle",
+    "icone": "route",
+    "parcours": [
+     "SI",
+     "SRC",
+     "AL"
+    ],
+    "dossiers": [
+     "dossier l2irt/ro/"
+    ],
+    "nom_motifs": [
+     "\\bro\\b",
+     "recherche operationnelle",
+     "sassai"
+    ],
+    "motscles": [
+     "programme lineaire",
+     "programmation lineaire",
+     "simplexe",
+     "fonction objectif",
+     "contraintes",
+     "methode graphique",
+     "dual",
+     "\\bpert\\b",
+     "\\bmpm\\b",
+     "ordonnancement",
+     "chemin critique",
+     "marge totale",
+     "graphe",
+     "plus court chemin",
+     "dijkstra",
+     "flot maximal",
+     "ford.fulkerson",
+     "probleme de transport",
+     "affectation"
+    ]
+   },
+   {
+    "id": "l2-proba",
+    "groupe": "s3-quanti",
+    "nom": "Probabilités et statistiques",
+    "icone": "dices",
+    "parcours": [
+     "SI",
+     "SRC",
+     "AL"
+    ],
+    "dossiers": [
+     "probabilite et statistiques"
+    ],
+    "nom_motifs": [
+     "probabilit",
+     "proba"
+    ],
+    "motscles": [
+     "probabilite",
+     "variable aleatoire",
+     "esperance",
+     "variance",
+     "ecart.type",
+     "loi binomiale",
+     "loi de poisson",
+     "loi normale",
+     "loi exponentielle",
+     "independant",
+     "conditionnelle",
+     "bayes",
+     "denombrement",
+     "combinaison",
+     "arrangement",
+     "fonction de repartition",
+     "densite",
+     "covariance",
+     "intervalle de confiance",
+     "statistique"
+    ]
+   },
+   {
+    "id": "l2-algo-avance",
+    "groupe": "s3-algo",
+    "nom": "Algorithmique avancée et optimisation du code",
+    "court": "Algorithmique avancée",
+    "icone": "git-branch",
+    "parcours": [
+     "SI",
+     "SRC",
+     "AL"
+    ],
+    "dossiers": [
+     "dossier l2irt/algo avance"
+    ],
+    "nom_motifs": [
+     "algo(rithmique)?[ _]avance",
+     "structures de donnees avancees",
+     "\\balgo\\.txt",
+     "algo1 sisso",
+     "tri par insertion"
+    ],
+    "motscles": [
+     "complexite",
+     "\\bo\\(n",
+     "recursiv",
+     "tri rapide",
+     "tri fusion",
+     "tri par insertion",
+     "diviser pour regner",
+     "arbre binaire",
+     "\\bavl\\b",
+     "tas",
+     "hachage",
+     "graphe",
+     "parcours en profondeur",
+     "parcours en largeur",
+     "programmation dynamique",
+     "liste chainee",
+     "pile",
+     "\\bfile\\b"
+    ]
+   },
+   {
+    "id": "l2-c-avance",
+    "groupe": "s3-algo",
+    "nom": "Langage C avancé",
+    "icone": "terminal",
+    "parcours": [
+     "SI",
+     "SRC",
+     "AL"
+    ],
+    "dossiers": [
+     "dossier l2irt/langage c avance"
+    ],
+    "nom_motifs": [
+     "c[- _]avance",
+     "langage.c",
+     "cours langage-c"
+    ],
+    "motscles": [
+     "#include",
+     "malloc",
+     "free\\(",
+     "pointeur",
+     "\\bstruct\\b",
+     "typedef",
+     "fopen",
+     "fprintf",
+     "fscanf",
+     "fichier",
+     "liste chainee",
+     "argc",
+     "argv",
+     "realloc",
+     "\\*\\*",
+     "->"
+    ]
+   },
+   {
+    "id": "l2-poo",
+    "groupe": "s3-poo",
+    "nom": "Concepts de la programmation orientée objet",
+    "court": "Concepts de la POO",
+    "icone": "boxes",
+    "parcours": [
+     "SI",
+     "SRC",
+     "AL"
+    ],
+    "dossiers": [
+     "dossier l2irt/poo"
+    ],
+    "nom_motifs": [
+     "\\bpoo\\b",
+     "orientee objet"
+    ],
+    "motscles": [
+     "classe",
+     "objet",
+     "encapsulation",
+     "heritage",
+     "polymorphisme",
+     "abstraction",
+     "interface",
+     "constructeur",
+     "methode",
+     "attribut",
+     "instance",
+     "surcharge",
+     "redefinition",
+     "classe abstraite",
+     "visibilite",
+     "\\bprivate\\b",
+     "\\bpublic\\b",
+     "uml"
+    ]
+   },
+   {
+    "id": "l2-java",
+    "groupe": "s3-poo",
+    "nom": "Langage Java",
+    "icone": "coffee",
+    "parcours": [
+     "SI",
+     "SRC",
+     "AL"
+    ],
+    "dossiers": [
+     "dossier l2irt/java"
+    ],
+    "nom_motifs": [
+     "java",
+     "paquetages"
+    ],
+    "motscles": [
+     "\\bjava\\b",
+     "public class",
+     "public static void main",
+     "system\\.out\\.println",
+     "\\bextends\\b",
+     "\\bimplements\\b",
+     "\\bnew\\b",
+     "arraylist",
+     "\\bpackage\\b",
+     "\\bimport java",
+     "exception",
+     "try ?\\{",
+     "\\bthrows?\\b",
+     "\\bstring\\b",
+     "scanner",
+     "jvm",
+     "\\bswing\\b"
+    ]
+   },
+   {
+    "id": "l2-communication",
+    "groupe": "s3-langue",
+    "nom": "Communication d'entreprise",
+    "icone": "megaphone",
+    "parcours": [
+     "SI",
+     "SRC",
+     "AL"
+    ],
+    "dossiers": [
+     "communication d.entreprise"
+    ],
+    "nom_motifs": [
+     "communication",
+     "dagbeto"
+    ],
+    "motscles": [
+     "communication",
+     "entreprise",
+     "communication interne",
+     "communication externe",
+     "message",
+     "emetteur",
+     "recepteur",
+     "canal",
+     "feed.?back",
+     "negociation",
+     "reunion",
+     "conflit",
+     "image de marque",
+     "relations publiques",
+     "marketing",
+     "note de service",
+     "compte rendu"
+    ]
+   },
+   {
+    "id": "l2-anglais",
+    "groupe": "s3-langue",
+    "nom": "Anglais technique",
+    "icone": "languages",
+    "parcours": [
+     "SI",
+     "SRC",
+     "AL"
+    ],
+    "dossiers": [
+     "dossier l2irt/anglais"
+    ],
+    "nom_motifs": [
+     "anglais",
+     "english",
+     "irt ?2 final",
+     "catch-up"
+    ],
+    "motscles": [
+     "\\bthe\\b",
+     "\\band\\b",
+     "\\bis\\b",
+     "\\bare\\b",
+     "\\bwrite\\b",
+     "\\banswer\\b",
+     "\\bfollowing\\b",
+     "\\btext\\b",
+     "\\btranslate\\b",
+     "\\bcomputer\\b",
+     "\\bnetwork\\b",
+     "\\bsoftware\\b"
+    ]
+   },
+   {
+    "id": "l2-securite",
+    "groupe": "s3-secu",
+    "nom": "Introduction à la sécurité informatique",
+    "court": "Sécurité informatique",
+    "icone": "shield",
+    "parcours": [
+     "SI",
+     "SRC",
+     "AL"
+    ],
+    "dossiers": [
+     "dossier l2irt/si/"
+    ],
+    "nom_motifs": [
+     "securite",
+     "ethical hacking",
+     "epreuve si"
+    ],
+    "motscles": [
+     "securite",
+     "confidentialite",
+     "integrite",
+     "disponibilite",
+     "\\bcia\\b",
+     "menace",
+     "vulnerabilite",
+     "attaque",
+     "malware",
+     "virus",
+     "cheval de troie",
+     "phishing",
+     "hameconnage",
+     "pare.feu",
+     "firewall",
+     "chiffrement",
+     "cryptographie",
+     "authentification",
+     "\\bddos\\b",
+     "ingenierie sociale",
+     "politique de securite",
+     "\\bvpn\\b",
+     "hachage"
+    ]
+   },
+   {
+    "id": "l2-git",
+    "groupe": "s3-secu",
+    "nom": "Introduction au versioning avec Git",
+    "court": "Versioning avec Git",
+    "icone": "git-merge",
+    "parcours": [
+     "SI",
+     "SRC",
+     "AL"
+    ],
+    "dossiers": [
+     "dossier l2irt/git",
+     "versioning avec git"
+    ],
+    "nom_motifs": [
+     "\\bgit\\b",
+     "commandes git",
+     "versioning"
+    ],
+    "motscles": [
+     "\\bgit\\b",
+     "commit",
+     "\\bbranch",
+     "\\bmerge\\b",
+     "\\bpush\\b",
+     "\\bpull\\b",
+     "\\bclone\\b",
+     "github",
+     "gitlab",
+     "depot",
+     "repository",
+     "\\bcheckout\\b",
+     "\\brebase\\b",
+     "staging",
+     "\\bhead\\b",
+     "conflit"
+    ]
+   },
+   {
+    "id": "l2-teleinfo",
+    "groupe": "s4-teleinfo",
+    "nom": "Introduction à la téléinformatique",
+    "court": "Téléinformatique",
+    "icone": "radio-tower",
+    "parcours": [
+     "SI",
+     "SRC",
+     "AL"
+    ],
+    "dossiers": [
+     "dossier l2irt/teleinformatique"
+    ],
+    "nom_motifs": [
+     "teleinformatique"
+    ],
+    "motscles": [
+     "teleinformatique",
+     "modem",
+     "modulation",
+     "transmission (serie|parallele)",
+     "synchrone",
+     "asynchrone",
+     "multiplexage",
+     "\\bdte\\b",
+     "\\bdce\\b",
+     "debit",
+     "bande passante",
+     "rapidite de modulation",
+     "baud",
+     "codage (nrz|manchester)",
+     "detection d.erreurs",
+     "\\bcrc\\b",
+     "parite",
+     "hdlc",
+     "liaison de donnees"
+    ]
+   },
+   {
+    "id": "l2-ccna",
+    "groupe": "s4-teleinfo",
+    "nom": "Réseaux : CCNA 1",
+    "court": "CCNA 1",
+    "icone": "network",
+    "parcours": [
+     "SI",
+     "SRC",
+     "AL"
+    ],
+    "dossiers": [
+     "dossier l2irt/ccna",
+     "reseau ccna"
+    ],
+    "nom_motifs": [
+     "ccna",
+     "network fundamentals",
+     "srwe",
+     "\\bstp\\b"
+    ],
+    "motscles": [
+     "\\bcisco\\b",
+     "packet tracer",
+     "\\bvlan\\b",
+     "\\bios\\b",
+     "enable",
+     "configure terminal",
+     "show running",
+     "\\bipv4\\b",
+     "\\bipv6\\b",
+     "\\bvlsm\\b",
+     "\\bosi\\b",
+     "encapsulation",
+     "\\barp\\b",
+     "\\bicmp\\b",
+     "\\btcp\\b",
+     "\\budp\\b",
+     "spanning.tree",
+     "\\bstp\\b",
+     "masque de sous.reseau"
+    ]
+   },
+   {
+    "id": "l2-reseau-acces",
+    "groupe": "s4-teleinfo",
+    "nom": "Introduction au réseau d'accès",
+    "court": "Réseaux d'accès",
+    "icone": "radio",
+    "parcours": [
+     "SRC"
+    ],
+    "dossiers": [],
+    "nom_motifs": [
+     "reseau[x]? d.acces",
+     "reseaux d acces"
+    ],
+    "motscles": [
+     "reseau d.acces",
+     "boucle locale",
+     "\\badsl\\b",
+     "\\bxdsl\\b",
+     "\\bftth\\b",
+     "fibre optique",
+     "\\bpon\\b",
+     "\\bgpon\\b",
+     "cuivre",
+     "paire torsadee",
+     "\\bdslam\\b",
+     "\\bwimax\\b",
+     "\\blte\\b",
+     "derniere mile"
+    ]
+   },
+   {
+    "id": "l2-uml-merise",
+    "groupe": "s4-analyse",
+    "nom": "Analyse informatique : UML et Merise",
+    "court": "UML & Merise",
+    "icone": "workflow",
+    "parcours": [
+     "SI",
+     "SRC",
+     "AL"
+    ],
+    "dossiers": [
+     "uml merise",
+     "uml et merise"
+    ],
+    "nom_motifs": [
+     "\\buml\\b",
+     "merise",
+     "diagramme d",
+     "modele (conceptuel|logique)"
+    ],
+    "motscles": [
+     "\\buml\\b",
+     "diagramme de classes?",
+     "cas d.utilisation",
+     "diagramme de sequence",
+     "diagramme d.activite",
+     "acteur",
+     "\\bmcd\\b",
+     "\\bmld\\b",
+     "\\bmct\\b",
+     "cardinalite",
+     "multiplicite",
+     "association",
+     "entite",
+     "heritage",
+     "agregation",
+     "composition"
+    ]
+   },
+   {
+    "id": "l2-xml",
+    "groupe": "s4-analyse",
+    "nom": "Les fondements d'XML",
+    "court": "XML",
+    "icone": "code",
+    "parcours": [
+     "SI",
+     "SRC",
+     "AL"
+    ],
+    "dossiers": [
+     "dossier l2irt/xml",
+     "fondements d.xml"
+    ],
+    "nom_motifs": [
+     "\\bxml\\b"
+    ],
+    "motscles": [
+     "\\bxml\\b",
+     "\\bdtd\\b",
+     "xsd",
+     "schema xml",
+     "\\bxsl",
+     "xslt",
+     "xpath",
+     "<\\?xml",
+     "element",
+     "attribut",
+     "bien forme",
+     "valide",
+     "\\bdom\\b",
+     "\\bsax\\b",
+     "namespace",
+     "!element",
+     "!attlist"
+    ]
+   },
+   {
+    "id": "l2-maths-app",
+    "groupe": "s4-planif",
+    "nom": "Mathématiques appliquées",
+    "icone": "calculator",
+    "parcours": [
+     "SI",
+     "SRC",
+     "AL"
+    ],
+    "dossiers": [],
+    "nom_motifs": [
+     "\\bma\\b",
+     "\\bmf\\b",
+     "agbohouto",
+     "math"
+    ],
+    "motscles": [
+     "interet (simple|compose)",
+     "taux",
+     "capital",
+     "annuite",
+     "emprunt",
+     "actualisation",
+     "valeur acquise",
+     "matrice",
+     "systeme",
+     "equation",
+     "transformee de laplace",
+     "transformee de fourier",
+     "convolution",
+     "nombre complexe",
+     "serie de fourier",
+     "equation differentielle"
+    ]
+   },
+   {
+    "id": "l2-gp",
+    "groupe": "s4-planif",
+    "nom": "Introduction à la gestion de projet",
+    "court": "Gestion de projet",
+    "icone": "kanban",
+    "parcours": [
+     "SI",
+     "SRC",
+     "AL"
+    ],
+    "dossiers": [
+     "dossier l2irt/gestion de projet"
+    ],
+    "nom_motifs": [
+     "gestion de projet",
+     "\\bgp\\b",
+     "fiacre"
+    ],
+    "motscles": [
+     "projet",
+     "cahier des charges",
+     "\\bwbs\\b",
+     "\\bgantt\\b",
+     "\\bpert\\b",
+     "jalon",
+     "livrable",
+     "chef de projet",
+     "parties prenantes",
+     "risque",
+     "planning",
+     "budget",
+     "cycle de vie",
+     "\\bsmart\\b",
+     "\\braci\\b",
+     "methode agile",
+     "scrum",
+     "cadrage"
+    ]
+   },
+   {
+    "id": "l2-transmission",
+    "groupe": "s4-telecom",
+    "nom": "Introduction à la transmission",
+    "court": "Transmission",
+    "icone": "radio",
+    "parcours": [
+     "SRC"
+    ],
+    "dossiers": [
+     "dossier l2irt/transmission"
+    ],
+    "nom_motifs": [
+     "transmission"
+    ],
+    "motscles": [
+     "transmission",
+     "signal",
+     "spectre",
+     "bande passante",
+     "attenuation",
+     "bruit",
+     "rapport signal sur bruit",
+     "shannon",
+     "nyquist",
+     "modulation (am|fm|d.amplitude|de frequence)",
+     "\\bdb\\b",
+     "decibel",
+     "echantillonnage",
+     "fibre optique",
+     "canal",
+     "support de transmission",
+     "affaiblissement"
+    ]
+   },
+   {
+    "id": "l2-commutation",
+    "groupe": "s4-telecom",
+    "nom": "Introduction à la commutation",
+    "court": "Commutation",
+    "icone": "network",
+    "parcours": [
+     "SRC"
+    ],
+    "dossiers": [
+     "dossier l2irt/commutation"
+    ],
+    "nom_motifs": [
+     "commutation"
+    ],
+    "motscles": [
+     "commutation",
+     "commutation de circuits",
+     "commutation de paquets",
+     "commutation de messages",
+     "autocommutateur",
+     "\\bpabx\\b",
+     "signalisation",
+     "\\bss7\\b",
+     "\\brtc\\b",
+     "erlang",
+     "trafic",
+     "\\bmic\\b",
+     "\\bmulti(plexage)? temporel",
+     "\\bisdn\\b|\\brnis\\b",
+     "circuit virtuel",
+     "x\\.25",
+     "frame relay",
+     "\\batm\\b"
+    ]
+   },
+   {
+    "id": "l2-assembleur",
+    "groupe": "s4-basniveau",
+    "nom": "Assembleur et application à la sécurité",
+    "court": "Assembleur",
+    "icone": "binary",
+    "parcours": [
+     "SI"
+    ],
+    "dossiers": [
+     "dossier l2irt/assembleur"
+    ],
+    "nom_motifs": [
+     "assembleur",
+     "essembleur"
+    ],
+    "motscles": [
+     "assembleur",
+     "\\bmov\\b",
+     "\\bpush\\b",
+     "\\bpop\\b",
+     "\\bjmp\\b",
+     "\\bcmp\\b",
+     "\\beax\\b",
+     "\\bebx\\b",
+     "\\bax\\b",
+     "registre",
+     "\\bint 21h",
+     "\\bnasm\\b",
+     "pile",
+     "\\bcall\\b",
+     "\\bret\\b",
+     "segment",
+     "x86",
+     "debordement de tampon",
+     "buffer overflow"
+    ]
+   },
+   {
+    "id": "l2-docker",
+    "groupe": "s4-basniveau",
+    "nom": "Introduction à Docker",
+    "court": "Docker",
+    "icone": "boxes",
+    "parcours": [
+     "SI",
+     "SRC",
+     "AL"
+    ],
+    "dossiers": [],
+    "nom_motifs": [
+     "docker",
+     "conteneur",
+     "orchestration"
+    ],
+    "motscles": [
+     "docker",
+     "conteneur",
+     "container",
+     "dockerfile",
+     "docker.compose",
+     "image docker",
+     "kubernetes",
+     "orchestration",
+     "\\bpod\\b",
+     "registry",
+     "docker run",
+     "volume"
+    ]
+   },
+   {
+    "id": "l2-kernel-windows",
+    "groupe": "s4-windows",
+    "nom": "Kernel Windows et analyse de RAM",
+    "court": "Kernel Windows & RAM",
+    "icone": "hard-drive",
+    "parcours": [
+     "SI"
+    ],
+    "dossiers": [],
+    "nom_motifs": [
+     "kernel windows",
+     "analyse de ram"
+    ],
+    "motscles": [
+     "kernel",
+     "noyau windows",
+     "volatility",
+     "dump memoire",
+     "analyse de (la )?ram",
+     "forensic",
+     "\\bpe\\b",
+     "\\bdll\\b",
+     "processus",
+     "\\beprocess\\b",
+     "pool",
+     "ntoskrnl",
+     "rootkit",
+     "memoire volatile"
+    ]
+   },
+   {
+    "id": "l2-reseaux-ms",
+    "groupe": "s4-windows",
+    "nom": "Réseaux en environnement Microsoft",
+    "court": "Réseaux Microsoft",
+    "icone": "network",
+    "parcours": [
+     "SI",
+     "SRC"
+    ],
+    "dossiers": [
+     "reseaux en environnement microsoft"
+    ],
+    "nom_motifs": [
+     "environnement microsoft",
+     "reseaux en env",
+     "sreseaux"
+    ],
+    "motscles": [
+     "active directory",
+     "domaine",
+     "controleur de domaine",
+     "\\bdns\\b",
+     "\\bdhcp\\b",
+     "partage",
+     "\\bgpo\\b",
+     "strategie de groupe",
+     "groupe de travail",
+     "\\bsmb\\b",
+     "unite d.organisation",
+     "\\bou\\b",
+     "foret",
+     "arborescence",
+     "netbios",
+     "ipconfig"
+    ]
+   },
+   {
+    "id": "l2-windows-server",
+    "groupe": "s4-windows",
+    "nom": "Microsoft Windows Server",
+    "court": "Windows Server",
+    "icone": "monitor",
+    "parcours": [
+     "SI",
+     "SRC"
+    ],
+    "dossiers": [
+     "microsoft windows server"
+    ],
+    "nom_motifs": [
+     "windows server",
+     "windows erver",
+     "swindows",
+     "ms swindows"
+    ],
+    "motscles": [
+     "windows server",
+     "active directory",
+     "\\bad ds\\b",
+     "\\biis\\b",
+     "hyper.v",
+     "role",
+     "fonctionnalite",
+     "gestionnaire de serveur",
+     "powershell",
+     "\\bgpo\\b",
+     "\\bwsus\\b",
+     "controleur de domaine",
+     "\\bntfs\\b",
+     "quota",
+     "\\braid\\b"
+    ]
+   },
+   {
+    "id": "l2-virtualisation",
+    "groupe": "s4-windows",
+    "nom": "Introduction à la virtualisation",
+    "court": "Virtualisation & cloud",
+    "icone": "cloud",
+    "parcours": [
+     "SI",
+     "SRC"
+    ],
+    "dossiers": [],
+    "nom_motifs": [
+     "virtualisation",
+     "cloud"
+    ],
+    "motscles": [
+     "virtualisation",
+     "hyperviseur",
+     "machine virtuelle",
+     "\\bvm\\b",
+     "vmware",
+     "virtualbox",
+     "hyper.v",
+     "\\bkvm\\b",
+     "cloud",
+     "\\biaas\\b",
+     "\\bpaas\\b",
+     "\\bsaas\\b",
+     "type 1",
+     "type 2",
+     "conteneur"
+    ]
+   },
+   {
+    "id": "l2-bd",
+    "groupe": "s4-al",
+    "nom": "Architecture et conception des bases de données relationnelles",
+    "court": "Bases de données (AL)",
+    "icone": "database",
+    "parcours": [
+     "AL"
+    ],
+    "dossiers": [
+     "base de donnees"
+    ],
+    "nom_motifs": [
+     "base[s]? de donn",
+     "\\bbd\\b"
+    ],
+    "motscles": [
+     "\\bselect\\b",
+     "create table",
+     "cle primaire",
+     "cle etrangere",
+     "normalisation",
+     "forme normale",
+     "dependance fonctionnelle",
+     "\\bmld\\b",
+     "trigger",
+     "procedure stockee",
+     "\\bindex\\b",
+     "transaction",
+     "jointure",
+     "vue",
+     "contrainte"
+    ]
+   },
+   {
+    "id": "l2-web",
+    "groupe": "s4-al",
+    "nom": "Développement web : PHP, JavaScript",
+    "court": "Développement web (PHP, JS)",
+    "icone": "file-code",
+    "parcours": [
+     "AL"
+    ],
+    "dossiers": [
+     "dossier l2irt/php",
+     "developpement frontend"
+    ],
+    "nom_motifs": [
+     "\\bphp\\b",
+     "frontend",
+     "javascript"
+    ],
+    "motscles": [
+     "<\\?php",
+     "\\$_post",
+     "\\$_get",
+     "\\$_session",
+     "\\bpdo\\b",
+     "mysqli",
+     "javascript",
+     "\\bdom\\b",
+     "addeventlistener",
+     "fetch\\(",
+     "\\bajax\\b",
+     "\\bjson\\b",
+     "<form",
+     "html",
+     "\\bcss\\b"
+    ]
+   },
+   {
+    "id": "l2-python",
+    "groupe": "s4-al",
+    "nom": "Introduction à Python",
+    "court": "Python",
+    "icone": "terminal",
+    "parcours": [
+     "AL"
+    ],
+    "dossiers": [],
+    "nom_motifs": [
+     "python"
+    ],
+    "motscles": [
+     "python",
+     "\\bdef \\w+\\(",
+     "\\bprint\\(",
+     "\\bimport \\w+",
+     "\\blist\\b",
+     "\\bdict",
+     "\\bpip\\b",
+     "\\bself\\b",
+     "\\belif\\b"
+    ]
+   },
+   {
+    "id": "l2-framework",
+    "groupe": "s4-al",
+    "nom": "Introduction aux frameworks (front end & back end)",
+    "court": "Frameworks web",
+    "icone": "layers",
+    "parcours": [
+     "AL"
+    ],
+    "dossiers": [],
+    "nom_motifs": [
+     "framework",
+     "laravel",
+     "react",
+     "angular",
+     "vue\\.?js",
+     "django"
+    ],
+    "motscles": [
+     "framework",
+     "laravel",
+     "symfony",
+     "django",
+     "express",
+     "react",
+     "angular",
+     "vue\\.?js",
+     "\\bmvc\\b",
+     "composant",
+     "route",
+     "controller",
+     "\\bnpm\\b",
+     "composer"
+    ]
+   },
+   {
+    "id": "l2-compta",
+    "groupe": "s4-compta",
+    "nom": "Comptabilité générale",
+    "icone": "receipt",
+    "parcours": [
+     "AL"
+    ],
+    "dossiers": [
+     "dossier l2irt/compta"
+    ],
+    "nom_motifs": [
+     "compta"
+    ],
+    "motscles": [
+     "bilan",
+     "compte de resultat",
+     "debit",
+     "credit",
+     "journal",
+     "grand livre",
+     "balance",
+     "\\btva\\b",
+     "amortissement",
+     "actif",
+     "passif",
+     "syscohada",
+     "ecriture",
+     "facture",
+     "stock"
+    ]
+   }
+  ]
+ },
+ "L3": {
+  "nom": "Licence 3",
+  "filiere": "IRT",
+  "groupes": [],
+  "matieres": []
+ }
+}

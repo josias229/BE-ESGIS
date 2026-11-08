@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <title>ESGIS - Librairie d'Épreuves & Mentorat</title>
+    <meta name="description" content="Banque d'épreuves de l'ESGIS : anciens sujets, cours, TD et corrigés de la Licence 1 à la Licence 3, classés par matière et par année, à télécharger gratuitement.">
+    <meta name="theme-color" content="#0f172a">
+    <meta property="og:title" content="ESGIS Ressources — Librairie d'épreuves">
+    <meta property="og:description" content="Anciens sujets, cours, TD et corrigés de L1 à L3, classés par matière et par année.">
+    <meta property="og:image" content="logo.png">
+    <link rel="icon" href="logo.png">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="assets/config.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Lucide Icons pour une finesse et un rendu professionnel -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <link rel="stylesheet" href="assets/katex/katex.min.css">
+    <link rel="stylesheet" href="assets/style.css">
+</head>
+<body class="font-sans text-brand-dark antialiased" data-page="accueil">
+
+    <header class="w-full py-4 sm:py-6 px-4 sm:px-6 lg:px-8 max-w-5xl mx-auto flex justify-between items-center gap-3 bg-transparent">
+        <a href="index.html" class="flex items-center gap-2 min-w-0" aria-label="ESGIS Ressources — accueil">
+            <!-- Logo façon JNC original -->
+            <div class="flex items-center">
+                <img src="logo.png" alt="ESGIS Logo" class="w-8 h-8 mr-2 object-contain">
+                <span class="font-bold text-2xl tracking-tighter text-brand-dark leading-none">esgis</span>
+            </div>
+            <!-- Badge rouge "RESSOURCES" comme dans la maquette -->
+            <span class="bg-brand-red text-white text-[9px] font-bold px-2 py-1 rounded uppercase tracking-wider ml-1 mt-1">
+                Ressources
+            </span>
+        </a>
+
+        <div class="flex items-center gap-2 sm:gap-4">
+            <a data-lien="mentor" target="_blank" rel="noopener" class="text-brand-gray hover:text-brand-dark text-sm font-medium smooth-transition hidden sm:flex items-center gap-1.5">
+                <i data-lucide="graduation-cap" class="w-4 h-4" stroke-width="1.5"></i>
+                Devenir Mentor
+            </a>
+            <button type="button" data-modale="soumettre" class="bg-brand-dark hover:bg-slate-800 text-white text-sm font-medium py-2 px-3 sm:px-4 rounded flex items-center gap-2 smooth-transition focus-ring">
+                <i data-lucide="plus" class="w-4 h-4" stroke-width="2"></i>
+                <span>Soumettre</span>
+            </button>
+        </div>
+    </header>
+
+    <main class="flex-grow w-full max-w-4xl mx-auto px-4 sm:px-6 py-8 sm:py-12 flex flex-col items-start">
+
+        <div class="w-full mb-8 sm:mb-10">
+            <h1 class="text-[28px] sm:text-[32px] md:text-[44px] font-bold tracking-tight text-brand-dark leading-tight mb-4">
+                La librairie d'épreuves, de projets <span class="text-slate-500 font-normal">et</span><br class="hidden md:block"/>
+                <span class="text-slate-500 font-normal">mentors pour vos révisions.</span>
+            </h1>
+            <p class="text-base text-brand-gray max-w-2xl leading-relaxed">
+                Une ressource ouverte pour les étudiants en recherche d'anciens sujets (L1 à L3),
+                et celles et ceux qui souhaitent accompagner leurs camarades en tant que mentor.
+                <span class="whitespace-nowrap"><span class="font-semibold text-brand-dark" data-total>—</span> documents à télécharger.</span>
+            </p>
+        </div>
+
+        <!-- Barre de recherche identique à la maquette -->
+        <form class="w-full flex mb-6" role="search" onsubmit="event.preventDefault()">
+            <label for="recherche" class="sr-only">Rechercher une ressource</label>
+            <div class="flex items-center w-full bg-white border border-brand-border rounded overflow-hidden shadow-[0_1px_2px_rgba(0,0,0,0.02)] focus-within:border-slate-400 smooth-transition">
+                <div class="pl-4 pr-2 text-slate-400">
+                    <i data-lucide="search" class="w-5 h-5" stroke-width="1.5"></i>
+                </div>
+                <input type="search" id="recherche" data-recherche autocomplete="off" enterkeyhint="search"
+                       class="flex-1 py-3 px-2 text-sm text-brand-dark placeholder-slate-400 bg-transparent w-full min-w-0"
+                       placeholder="Rechercher une matière, une épreuve, une année…">
+                <kbd class="hidden md:inline-block mr-3 text-[10px] font-medium text-slate-400 border border-brand-border rounded px-1.5 py-0.5">/</kbd>
+            </div>
+            <!-- Bouton append foncé de la maquette : proposer une ressource -->
+            <button type="button" data-modale="soumettre" class="bg-brand-dark hover:bg-slate-800 text-white px-4 sm:px-5 ml-2 rounded flex items-center justify-center smooth-transition focus-ring flex-shrink-0" title="Soumettre une ressource" aria-label="Soumettre une ressource">
+                <i data-lucide="plus" class="w-5 h-5" stroke-width="1.5"></i>
+            </button>
+        </form>
+
+        <div class="flex flex-wrap items-center gap-2 w-full mb-8 sm:mb-10 border-b border-brand-border pb-6 sm:pb-8">
+            <button type="button" data-famille="tout" aria-pressed="true" class="bg-brand-dark border border-brand-dark text-white text-xs font-medium px-4 py-2 rounded focus-ring smooth-transition">
+                Toutes les ressources
+            </button>
+            <button type="button" data-famille="epreuve" aria-pressed="false" class="bg-white border border-brand-border text-slate-600 hover:text-brand-dark hover:bg-slate-50 text-xs font-medium px-4 py-2 rounded flex items-center gap-2 smooth-transition focus-ring">
+                <span class="w-1.5 h-1.5 rounded-full bg-brand-red"></span> Épreuves
+            </button>
+            <button type="button" data-famille="cours" aria-pressed="false" class="bg-white border border-brand-border text-slate-600 hover:text-brand-dark hover:bg-slate-50 text-xs font-medium px-4 py-2 rounded flex items-center gap-2 smooth-transition focus-ring">
+                <span class="w-1.5 h-1.5 rounded-full bg-dot-irt"></span> Cours
+            </button>
+            <button type="button" data-famille="td" aria-pressed="false" class="bg-white border border-brand-border text-slate-600 hover:text-brand-dark hover:bg-slate-50 text-xs font-medium px-4 py-2 rounded flex items-center gap-2 smooth-transition focus-ring">
+                <span class="w-1.5 h-1.5 rounded-full bg-amber-500"></span> TD &amp; TP
+            </button>
+            <button type="button" data-famille="corrige" aria-pressed="false" class="bg-white border border-brand-border text-slate-600 hover:text-brand-dark hover:bg-slate-50 text-xs font-medium px-4 py-2 rounded flex items-center gap-2 smooth-transition focus-ring">
+                <span class="w-1.5 h-1.5 rounded-full bg-dot-gestion"></span> Corrigés
+            </button>
+
+            <!-- Sélecteur d'année façon dropdown -->
+            <label for="filtre-niveau" class="sr-only">Niveau</label>
+            <select id="filtre-niveau" class="select-btn bg-white border border-brand-border text-slate-600 hover:text-brand-dark hover:bg-slate-50 text-xs font-medium pl-4 py-2 rounded smooth-transition focus-ring ml-0 sm:ml-auto">
+                <option value="">Année (L1, L2, L3)</option>
+                <option value="L1">Licence 1</option>
+                <option value="L2">Licence 2</option>
+                <option value="L3">Licence 3</option>
+            </select>
+        </div>
+
+        <!-- Résultats de recherche (remplis par assets/app.js) -->
+        <div id="resultats" class="w-full mb-10 hidden"></div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 sm:gap-6 w-full">
+
+            <!-- Carte L1 -->
+            <a href="l1.html" class="block group relative p-6 bg-white border border-brand-border rounded-xl hover:border-blue-400 hover:shadow-lg hover:-translate-y-1 smooth-transition overflow-hidden">
+                <div class="absolute inset-0 bg-gradient-to-br from-blue-50 to-transparent opacity-0 group-hover:opacity-100 smooth-transition"></div>
+                <div class="relative z-10 flex flex-col items-center text-center h-full">
+                    <div class="w-16 h-16 rounded-2xl bg-blue-100 text-blue-600 flex items-center justify-center mb-4 group-hover:scale-110 smooth-transition shadow-sm">
+                        <i data-lucide="book-open" class="w-8 h-8" stroke-width="1.5"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-brand-dark mb-2">Licence 1</h3>
+                    <p class="text-sm text-brand-gray mb-3">
+                        Découvrez les bases fondamentales. Algorithmique, architecture, bases de données, etc.
+                    </p>
+                    <p class="text-xs text-brand-gray mb-4" data-compteur="L1">&nbsp;</p>
+                    <span class="mt-auto inline-flex items-center text-blue-600 text-sm font-semibold gap-1 group-hover:gap-2 smooth-transition">
+                        Explorer <i data-lucide="arrow-right" class="w-4 h-4"></i>
+                    </span>
+                </div>
+            </a>
+
+            <!-- Carte L2 -->
+            <a href="l2.html" class="block group relative p-6 bg-white border border-brand-border rounded-xl hover:border-emerald-400 hover:shadow-lg hover:-translate-y-1 smooth-transition overflow-hidden">
+                <div class="absolute inset-0 bg-gradient-to-br from-emerald-50 to-transparent opacity-0 group-hover:opacity-100 smooth-transition"></div>
+                <div class="relative z-10 flex flex-col items-center text-center h-full">
+                    <div class="w-16 h-16 rounded-2xl bg-emerald-100 text-emerald-600 flex items-center justify-center mb-4 group-hover:scale-110 smooth-transition shadow-sm">
+                        <i data-lucide="code" class="w-8 h-8" stroke-width="1.5"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-brand-dark mb-2">Licence 2</h3>
+                    <p class="text-sm text-brand-gray mb-3">
+                        Approfondissement des concepts. Programmation avancée, systèmes, réseau étendu.
+                    </p>
+                    <p class="text-xs text-brand-gray mb-4" data-compteur="L2">&nbsp;</p>
+                    <span class="mt-auto inline-flex items-center text-emerald-600 text-sm font-semibold gap-1 group-hover:gap-2 smooth-transition">
+                        Explorer <i data-lucide="arrow-right" class="w-4 h-4"></i>
+                    </span>
+                </div>
+            </a>
+
+            <!-- Carte L3 -->
+            <a href="l3.html" class="block group relative p-6 bg-white border border-brand-border rounded-xl hover:border-purple-400 hover:shadow-lg hover:-translate-y-1 smooth-transition overflow-hidden sm:col-span-2 md:col-span-1">
+                <div class="absolute inset-0 bg-gradient-to-br from-purple-50 to-transparent opacity-0 group-hover:opacity-100 smooth-transition"></div>
+                <div class="relative z-10 flex flex-col items-center text-center h-full">
+                    <div class="w-16 h-16 rounded-2xl bg-purple-100 text-purple-600 flex items-center justify-center mb-4 group-hover:scale-110 smooth-transition shadow-sm">
+                        <i data-lucide="award" class="w-8 h-8" stroke-width="1.5"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-brand-dark mb-2">Licence 3</h3>
+                    <p class="text-sm text-brand-gray mb-3">
+                        Spécialisation et professionnalisation. Projets, ingénierie logicielle, sécurité.
+                    </p>
+                    <p class="text-xs text-brand-gray mb-4" data-compteur="L3">&nbsp;</p>
+                    <span class="mt-auto inline-flex items-center text-purple-600 text-sm font-semibold gap-1 group-hover:gap-2 smooth-transition">
+                        Explorer <i data-lucide="arrow-right" class="w-4 h-4"></i>
+                    </span>
+                </div>
+            </a>
+
+        </div>
+
+        <!-- Comment ça marche -->
+        <div class="w-full mt-12 sm:mt-16 grid grid-cols-1 sm:grid-cols-3 gap-4">
+            <div class="flex items-start gap-3 p-4 bg-white/70 border border-brand-border rounded-xl">
+                <div class="w-9 h-9 shrink-0 rounded-lg bg-slate-100 text-slate-600 flex items-center justify-center"><i data-lucide="search" class="w-4 h-4"></i></div>
+                <div><p class="text-sm font-semibold text-brand-dark">Cherchez</p><p class="text-xs text-brand-gray mt-0.5">Par matière, année académique, type d'épreuve ou groupe.</p></div>
+            </div>
+            <div class="flex items-start gap-3 p-4 bg-white/70 border border-brand-border rounded-xl">
+                <div class="w-9 h-9 shrink-0 rounded-lg bg-slate-100 text-slate-600 flex items-center justify-center"><i data-lucide="eye" class="w-4 h-4"></i></div>
+                <div><p class="text-sm font-semibold text-brand-dark">Consultez</p><p class="text-xs text-brand-gray mt-0.5">Aperçu direct des PDF, documents Word et photos d'épreuves.</p></div>
+            </div>
+            <div class="flex items-start gap-3 p-4 bg-white/70 border border-brand-border rounded-xl">
+                <div class="w-9 h-9 shrink-0 rounded-lg bg-slate-100 text-slate-600 flex items-center justify-center"><i data-lucide="download" class="w-4 h-4"></i></div>
+                <div><p class="text-sm font-semibold text-brand-dark">Téléchargez</p><p class="text-xs text-brand-gray mt-0.5">Gratuitement, en PDF ou au format d'origine, pour réviser hors ligne.</p></div>
+            </div>
+        </div>
+
+    </main>
+
+    <footer class="w-full mt-auto border-t border-slate-100 py-6">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 flex flex-col sm:flex-row justify-between items-center gap-4 text-xs text-brand-gray">
+            <div class="flex items-center gap-1">
+                Créé avec <i data-lucide="heart" class="w-3.5 h-3.5 text-brand-red fill-brand-red mx-1" stroke-width="0"></i> pour les étudiants de l'ESGIS
+            </div>
+            <div class="flex items-center gap-4">
+                <a data-lien="soumission" target="_blank" rel="noopener" class="hover:text-brand-dark smooth-transition">Nous contacter</a>
+                <a href="#" data-modale="confidentialite" class="hover:text-brand-dark smooth-transition">Confidentialité</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="assets/catalogue.js"></script>
+    <script src="assets/contenus.js"></script>
+    <script src="assets/app.js"></script>
+</body>
+</html>

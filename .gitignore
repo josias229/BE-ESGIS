@@ -1,0 +1,36 @@
+# ---------------------------------------------------------------
+# BE-ESGIS : fichiers à ne JAMAIS publier sur GitHub
+# ---------------------------------------------------------------
+
+# Données personnelles (élèves, jurys, pièces d'identité, copies nominatives)
+*LISTES DES APPRENANTS*
+*Jury Licence*
+*Lettre_de_motivation_*
+*ANIP_DOC*
+*Grille L1IRT*
+*AKPOVI Edgard*
+*NOUKPO Vertueux*
+*Emploi_du_temps*
+*REGLEMENT_ESGIS_CUP*
+archiveL1/MEMOIRE 24-25/
+
+# Fichiers trop lourds pour GitHub (> 100 Mo) et installeurs
+*.mp4
+*.exe
+*.msi
+**/OracleXE*/
+archiveL1/SQL/LANGAGE SQL/ORACLE/
+L1 - Mati*res/Architecture des syst*mes d'exploitation.rar
+
+# Copies en double (déjà présentes ailleurs dans le dépôt)
+L1 - Mati*res/ARCHIVES RIVAROL/
+archiveL1/HTML/Epreuve_L1/
+
+# Fichiers techniques / temporaires
+**/bin/
+**/obj/
+~$*
+Thumbs.db
+desktop.ini
+.DS_Store
+*.tmp
