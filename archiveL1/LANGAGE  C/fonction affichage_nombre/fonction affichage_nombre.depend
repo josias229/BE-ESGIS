@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1740211627 source:d:\esgis\langage  c\fonction affichage_nombre\main.c
+	<stdio.h>
+	<stdlib.h>
+

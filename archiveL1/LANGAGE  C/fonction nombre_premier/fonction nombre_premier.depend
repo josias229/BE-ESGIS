@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1740213436 source:d:\esgis\langage  c\fonction nombre_premier\main.c
+	<stdio.h>
+	<stdlib.h>
+

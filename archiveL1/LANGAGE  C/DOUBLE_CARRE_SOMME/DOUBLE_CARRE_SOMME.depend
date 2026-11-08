@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1737484138 source:d:\esgis\langage  c\double_carre_somme\main.c
+	<stdio.h>
+	<stdlib.h>
+

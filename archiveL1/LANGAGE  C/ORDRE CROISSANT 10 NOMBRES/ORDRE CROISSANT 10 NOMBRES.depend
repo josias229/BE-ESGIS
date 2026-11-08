@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1737491052 source:d:\esgis\langage  c\ordre croissant 10 nombres\main.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+

@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1740135370 source:d:\esgis\langage  c\fonction_factorielle\main.c
+	<stdio.h>
+	<stdlib.h>
+

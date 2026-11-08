@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1739742596 source:d:\esgis\langage  c\calculatrice\main.c
+	<stdio.h>
+	<stdlib.h>
+

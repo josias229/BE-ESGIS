@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1740135460 source:d:\esgis\langage  c\fonction_calcul_somme\main.c
+	<stdio.h>
+	<stdlib.h>
+

@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1739804602 source:d:\esgis\langage  c\perimetre\main.c
+	<stdio.h>
+	<stdlib.h>
+
