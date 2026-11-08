@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<title>Contact</title>
+</head>
+<body>
+
+	<header>
+
+		<nav>
+			<div id="en_tete">
+				<img src="image/logo.jpg"/ width="80px" height="80px">
+				<ul>
+
+					<li><a href="index.html">Accueil</a></li>
+					<li><a href="apropos.html">A propos</a></li>
+					<li><a href="blog.html">Blog</a></li>
+					<li><a href="contact.html">Contact</a></li>
+					
+				</ul>
+			</div>
+		</nav>
+		
+	</header>
+
+	<section id="contact">
+		<h3>Contactez-nous en remplissant ce formulaire</h3>
+		<form method="POST">
+			<label for="nom">Nom: </label>
+			<input style="width: 300px; height: 30px;" type="text" placeholder="Votre nom" id="nom" name="" required><br>
+
+			<label  for="prenom">Prénoms: </label>
+			<input style="width: 300px; height: 30px;" type="text" placeholder="Votre prénom" id="prenom" name="" required><br>
+
+			<label for="age">Age: </label>
+			<input style="width: 300px; height: 30px;" type="number" placeholder="Votre Age" min="15" id="age" name="" required><br>
+
+			<label for="mail">Email: </label>
+			<input style="width: 300px; height: 30px;" type="email" placeholder="Votre adresse mail" id="mail" name="" required><br>
+
+			<label for="telephone">Téléphone: </label>
+			<input style="width: 300px; height: 30px;" type="tel" placeholder="Numéro de téléphone(facultatif)" id="telephone" name=""><br>
+
+			<label for="url">URL: </label>
+			<input style="width: 300px; height: 30px;" type="url" placeholder="Lien vers votre profil(facultatif)" id="url" name=""><br>
+
+			<label for="sujet">Sujet :</label>
+			<select style="width: 300px; height: 30px;" id="sujet">
+				<option value=""></option>
+				<option value="Achats">Achats</option>
+				<option value="Stage">Stage</option>
+				<option value="Renseignements">Renseignements</option>
+				<option value="Autres">Autres</option>
+			</select><br>
+
+			<h4>Vous contactez par :</h4>
+			<label for="tel2">Téléphone: </label>
+			<input type="radio" id="tel2" name="contacter" >
+
+			<label for="tel3">Email: </label>
+			<input type="radio" id="tel3" name="contacter" ><br>
+
+			<h4>S'inscrire à une newsletter :</h4>
+			<label for="news1">Oui</label>
+			<input type="checkbox" name="news" id="news1">
+
+			<label for="news2">Non</label>
+			<input type="checkbox" name="news" id="news2">
+
+			<h4>Votre message ou demande</h4>
+			<textarea cols="50" rows="10">	
+			</textarea>
+			<br>
+
+			<label for="date">Date limite de disponibilité </label>
+			<input style="width: 300px; height: 30px;" type="date" id="date" name=""><br>
+
+			<label for="heure"> Heure préférée de contact </label><br>
+			<input style="width: 300px; height: 30px;" type="time" id="heure" name=""><br>
+
+			<div id="btn">
+				<div id="send">
+					<input type="submit" value="Envoyer" name="">
+				</div>
+				<div id="reinit">
+					<input type="reset" value="Réinitialiser" name="">
+				</div>
+			</div>
+
+			<input style="width: 400px; height: 50px;" disabled type="text" name="">
+		</form>
+	</section>
+	<br>
+
+	<footer>
+		<h5>Copyright - NOUKPO Vertueux</h5>
+		<ul>
+			<li><a href="https://m.facebook.com/profile.php?id=100087765430465&name=xhp_nt__fb_action__open_user&__n=K" target="_blank"><img src="image/facebook.png"></a></li>
+			<li><a href="https://twitter.com/" target="_blank"><img src="image/twitter.png"></a></li>
+			<li><a href="https://www.instagram.com" target="_blank"><img src="image/insta.png"></a></li>
+			<li><a href="https://www.youtube.com/" target="_blank"><img src="image/youtube.png"></a></li>
+		</ul>
+	</footer>
+
+</body>
+</html>

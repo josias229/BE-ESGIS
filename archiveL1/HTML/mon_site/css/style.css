@@ -1,0 +1,568 @@
+/* STYLE GENERAL */
+
+*{
+	padding: 0;
+	margin: 0;
+}
+
+body{
+	background-color: #E3FDF2;
+}
+
+p{
+	color: #0D47A1;
+}
+
+marquee{
+	font-size: 1.5em;
+	font-weight: bold;
+}
+
+/* EN TETE */
+
+#en_tete{
+	height: 130px;
+	width: 100%;
+	background-color: teal;
+	padding-top: 25px;
+	position: fixed;
+}
+
+#en_tete ul{
+	margin-left: 160px;
+}
+
+#en_tete img{
+	margin-left: 650px;
+	border-radius: 50%;
+}
+
+#en_tete ul li{
+	list-style: none;
+	display: inline;
+	margin-left: 150px;
+}
+
+#en_tete ul li a{
+	text-decoration: none;
+	font-size: 20px;
+	font-family: cursive;
+	color: white;
+}
+
+#en_tete ul li a:hover{
+	border: 1px solid black;
+	border-radius: 50px;
+	transition: 1s;
+	letter-spacing: 4px;
+	background-color: white;
+	color: black;	
+}
+
+table{
+	width: 800px;
+	margin-left: 280px;
+	border-collapse: collapse;
+	font-family: Verdana;
+}
+
+table tr th, table tr td{
+	height: 50px;
+	border: 1px solid black;
+	border-collapse: collapse;
+}
+
+table tr th{
+	font-weight: bold;
+	font-size: 25px;
+}
+
+table tr td{
+	font-size: 20px;
+}
+
+
+/* FOOTER */
+footer{
+	width: 100%;
+	height: 60px;
+	background-color: teal;
+	text-align: center;
+	padding-top: 15px;
+}
+
+footer h5{
+	margin-bottom: 5px;
+	color: white;
+	font-family: cursive;
+}
+
+footer ul li{
+	padding-top: 5px;
+	list-style: none;
+	display: inline;
+}
+
+footer ul li a img{
+	width: 30px;
+	height: 30px;
+	border-radius: 100%;
+	margin-left: 15px;
+}
+
+
+
+/* ACCUEIL */
+
+/*PRESENTATION */
+
+#presentation{
+	height: 490px;
+	padding-top: 190px;
+	padding-right: 60px;
+	padding-left: 10px;
+	text-align: center;
+}
+
+#presentation #profil{
+	float: left;
+	width: 50%;
+}
+
+#presentation #profil img{
+	border-radius: 50%;
+	width: 500px;
+	height: 400px;
+	border: 2px solid white;
+}
+
+#presentation #infos{
+	float: right;
+	width: 50%;
+	padding-right: -50px;
+}
+
+#presentation h1{
+	text-align: center;
+	font-size: 4em;
+	color: #9933CC;
+	text-decoration: underline;
+	margin-bottom: 10px;
+}
+
+#presentation #infos p{
+	text-align: justify !important;
+}
+
+/* OBJECTIFS */
+
+#objectif{
+	padding-top: 35px;
+	height: 480px;
+}
+
+#objectif div #motivation{
+	float: left;
+	width: 40%;
+	padding-left: 30px;
+}
+
+#objectif div #valeurs{
+	float: right;
+	width: 40%;
+	padding-right: 50px;
+}
+
+#objectif h3{
+	display: inline;
+	font-size: 35px;
+	color: teal;
+	text-transform: uppercase;
+	border-bottom: 1px solid teal;
+}
+
+#objectif div #motivation{
+	text-align: center;
+	margin-left: 50px;
+}
+
+#objectif p{
+	text-align: justify;
+	padding-top: 20px;
+}
+
+#objectif div #valeurs h3{
+	margin-left: 90px;
+}
+
+#objectif ul{
+	padding-top: 17px;
+	padding-left: 30px;
+}
+
+#objectif ul li{
+	list-style: circle;
+	padding-top: 25px;
+	font-size: 20px;
+}
+
+/* COMMENTAIRES */
+
+#commentaire{
+	width: 100%;
+	height: 200px;
+	margin-bottom: 20px;
+}
+
+#commentaire h3{
+	font-size: 3.5em;
+	text-align: center;
+	color: teal;
+	padding-bottom: 25px;
+}
+
+#commentaire h5{
+	color: green;
+}
+
+#commentaire p{
+	color: black;
+}
+
+#commentaire ul li{
+	list-style: circle;
+	margin-bottom: 15px;
+}
+
+#commentaire div div #comment1{
+	width: 40%;
+	float: left;
+	padding-left: 70px;
+	
+}
+
+#commentaire div div #comment2{
+	width: 40%;
+	float: right;
+	padding-right: 70px;
+	
+}
+
+
+/* A PROPOS */
+
+/* INTRODUCTION */
+
+#intro{
+	width: 50%;
+	height: 400px;
+	padding-top: 170px;
+	margin-left: 400px;
+	font-family: Verdana;
+	margin-bottom: 60px;
+}
+
+#intro h2{
+	margin-right: 140px;
+}
+
+#intro #titre{
+	float: left;
+	font-weight: bold;
+}
+
+#intro #valeurs{
+	float: right;
+	font-style: italic;
+	margin-right: 80px;
+}
+
+
+#intro ul li{
+	font-size: 1.5em;
+	margin-top: 30px;
+	list-style: none;
+}
+
+/* PARCOURS SCOLAIRE */
+
+#parcours{
+	text-align: center;
+	margin-bottom: 60px;
+}
+
+
+#parcours table tr th, #parcours table tr td{
+	height: 50px;
+	border: 1px solid black;
+	border-collapse: collapse;
+}
+
+#parcours table tr th{
+	font-weight: bold;
+	font-size: 25px;
+}
+
+#parcours table tr td{
+	font-size: 20px;
+}
+
+/* ExPERIENCES PROFESSIONNELLES */
+
+#experiences div div p{
+	text-align: center;
+	margin-bottom: 30px;
+	margin-top: 30px;
+}
+
+#experiences div div ul li{
+	margin-left: 300px;
+	margin-bottom: 25px;
+	list-style: square;
+}
+
+/* COMPETENCES */
+
+#competences h2{
+	margin-top: 50px;
+}
+
+#competences h4{
+	text-align: center;
+	margin-bottom: 30px;
+	margin-top: 30px;
+	color: #0D47A1;
+}
+
+#competences ul li ul li{
+	margin-left: 300px;
+	margin-bottom: 25px;
+	list-style: square;
+}
+
+/* ACTIVITES */
+
+#activites h2{
+	margin-top: 50px;
+}
+#activites table{
+	text-align: center;
+	margin-bottom: 50px;
+}
+
+#activites table tr td{
+	width: 50%;
+}
+
+/* INTERETS */
+
+#interet div ul li{
+	margin-top: 30px;
+	margin-left: 300px;
+	margin-bottom: 25px;
+	list-style: square;
+}
+
+
+/* OBJECTIFS */
+
+#objectifs p{
+	width: 60%;
+	text-align: justify;
+	margin-left: 270px;
+}
+
+/* VOYAGES */
+#voyage h2{
+	margin-top: 35px;
+}
+
+#voyage h4{
+	text-align: center;
+	margin-bottom: 30px;
+	margin-top: 30px;
+	color: #0D47A1;
+}
+
+#voyage ul li ul li{
+	margin-left: 300px;
+	margin-bottom: 25px;
+	list-style: square;
+}
+
+
+/* DEFITS */
+
+#defits h2, #reflexion h2{
+	margin-top: 35px;
+}
+
+#defits h4{
+	text-align: center;
+	font-size: 25px;
+}
+
+#defits p, #reflexion p{
+	width: 60%;
+	text-align: justify;
+	margin-left: 270px;
+}
+
+/* BLOG */
+
+/* ARTICLE 1 */
+
+#card{
+	width: 80%;
+	height: 600px;
+	border: 2px solid black;
+	border-radius: 5px;
+	margin-left: 130px;
+	margin-top: 30px;
+	box-shadow: 2px 2px black;
+}
+
+#card #imgproduit{
+	float: left;
+	width: 50%;
+}
+
+#card #infoproduit{
+	float: right;
+	width: 50%;
+	text-align: center;
+}
+
+#card #imgproduit img{
+	width: 100%;
+	height: 600px;
+}
+
+#infoproduit h2{
+	font-size: 2.5em;
+	text-transform: uppercase;
+	margin-bottom: 25px;
+}
+
+#infoproduit #infotitre{
+	background-color: teal;
+	color: #E3FDF2;
+	border-bottom: 1px solid white;
+}
+
+#infoproduit h3{
+	margin-bottom: 20px;
+}
+
+#infoproduit #categorie{
+	font-size: 1.5em;
+}
+
+#infoproduit #infocorps{
+	text-align: justify;
+	padding: 55px 20px;
+}
+
+/* BLOG */
+
+#blog{
+	padding-top: 150px;
+	width: 100%;
+	height: 1600px;
+}
+
+#blog img{
+	width: 100%;
+	height: 300px;
+}
+
+
+#contimage{
+	background-color: teal;
+}
+
+#blog a{
+	text-decoration: none;
+}
+
+#blog h2{
+	font-size: 60px;
+	font-family: sans-serif;
+	margin-bottom: 25px;
+	text-align: center;
+}
+
+#blog #nomprincipal{
+	background-color: teal;
+	color: white;
+}
+
+#blog ul li{
+	float: left;
+	list-style: none;
+	margin-left: 80px;
+	display: block;
+	width: 25%;
+	margin-bottom: 60px;
+	border: 1px solid black;
+	text-align: center;
+	box-shadow: 2px 2px black;
+}
+
+
+/* CONTACT */
+
+#contact{
+	padding-top: 150px;
+	height: 940px;
+	margin-bottom: 50px;
+}
+
+#contact h3{
+	text-align: center;
+	margin-left: 50px;
+	padding-top: 15px;
+	margin-bottom: 20px;
+}
+
+#contact form{
+	border: 1px solid black;
+	width: 40%;
+	height: 940px;
+	padding-left: 170px;
+	font-size: 1.4em;
+	margin-left: 350px;
+}
+
+
+#contact input, #contact select, #contact h4{
+	margin-top: 15px;
+	border-radius: 5px;
+	border: none;
+}
+
+#contact #btn{
+	display: block;
+	margin-top: 15px;
+}
+
+#contact #btn input{
+	display: inline-block;
+	background-color: white;
+	height: 30px;
+	width: 100px;
+	font-size: 15px;
+	font-family: cursive;
+	background-color: teal;
+	color: white;
+	font-weight: bold;
+}
+
+#contact #btn #send{
+	float: left;
+}
+
+#contact #btn #reinit{
+	float: right;
+	margin-right: 160px;
+}

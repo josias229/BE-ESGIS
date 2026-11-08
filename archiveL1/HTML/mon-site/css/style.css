@@ -1,0 +1,646 @@
+/* GENERAL */
+*{
+    padding: 0;
+    margin: 0;
+}
+
+#valide{
+	display: none;
+}
+
+.input{
+	width: 300px;
+	height: 30px;
+}
+
+span{
+	font-size: 12px;
+	display: none;
+	color: red;
+}
+
+h2{
+	padding-top: 25px;
+	text-align: center;
+	font-size: 4em;
+	text-transform: uppercase;
+	margin-bottom: 25px;
+}
+
+#vide{
+	height: 80px;
+}
+
+/* HEADER */
+header{
+    width: 100%;
+    height: 80px;
+    background-color:#808080;
+    position: fixed;
+}
+
+header #monlogo{
+    float: left;
+    width: 10%;
+}
+
+header #navlien{
+    float: right;
+    width: 70%;
+}
+
+header img{
+    width: 80px;
+    height: 80px;
+}
+
+header #navlien .lienprincipal{
+    width: 20%;
+    height: 80px;
+    /*border: 1px solid black;*/
+    float: left;
+    text-align: center;
+    list-style-type: none;
+}
+
+header #navlien .lienprincipal .lien{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 80px;
+    /*border: 1px solid white;*/
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: sans-serif;
+}
+
+#navlien .lienprincipal .lien:hover{
+    background-color: aqua;
+}
+
+#navlien li a:link, #navlien li a:visited{
+    display: block;
+    color: #FFFFFF;
+}
+
+#navlien .sousmenu{
+    list-style-type: none;
+    display: none;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    width: 14%;
+}
+
+#navlien .sousmenu li{
+    border-bottom: 1px solid transparent;
+}
+
+#navlien .sousmenu li a{
+    height: 37px;
+    padding-top: 10px;
+}
+
+#navlien .sousmenu li a:link, header li a:visited{
+    color: #FFFFFF;
+    text-decoration: none;
+    background-color: #808080;
+}
+
+#navlien .sousmenu li a:hover{
+    background-color: aqua;
+}
+
+#navlien li:hover .sousmenu{
+    display: block;
+}
+
+/* FOOTER */
+
+footer{
+    width: 100%;
+    height: 60px;
+    background-color: #808080;
+    margin-top: 25px;
+}
+
+footer #copyright{
+    float: left;
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    padding-top: 22px;
+}
+
+footer #footerlink{
+    float: right;
+    width: 40%;
+}
+
+#footerlink ul li{
+    list-style-type: none;
+    float: left;
+    margin-left: 30px;
+    padding-top: 10px;
+}
+
+footer img{
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+}
+
+table{
+	width: 800px;
+	margin-left: 280px;
+	border-collapse: collapse;
+	font-family: Verdana;
+}
+
+table tr th, table tr td{
+	height: 50px;
+	border: 1px solid black;
+	border-collapse: collapse;
+}
+
+table tr th{
+	font-weight: bold;
+	font-size: 25px;
+}
+
+table tr td{
+	font-size: 20px;
+}
+
+/* ACCUEIL */
+
+#presentation #profil_logo{
+	display: flex;
+	justify-content: center;
+	margin-bottom: 30px;
+	padding-top: 100px;
+}
+
+#presentation img{
+	width: 500px;
+	height: 500px;
+	border-radius: 100%;
+}
+
+#presentation h1{
+	text-align: center;
+	font-size: 5em;
+	font-family: sans-serif;
+}
+
+#presentation p{
+	display: inline-block;
+	text-align: justify;
+	width: 80%;
+	margin-left: 110px;
+	margin-bottom: 20px;
+}
+
+/* OBJECTIFS */
+
+#objectifs p{
+	display: inline-block;
+	text-align: justify;
+	width: 80%;
+	margin-left: 110px;
+	margin-bottom: 20px;
+}
+
+/* COMMENTAIRES */
+
+#commentaires #comm{
+	margin-left: 110px;
+	width: 80%;
+	height: 100px;
+	margin-bottom: 30px;
+}
+
+#commentaires #comm #comm_header{
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	height: 30%;
+	background-color: black;
+	color: white;
+	text-align: center;
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+}
+
+#commentaires #comm #comm_main{
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	text-align: justify;
+	height: 70%;
+	background-color: #808080;
+	padding-left: 15px;
+	padding-right: 15px;
+}
+
+
+/* VALEURS */
+
+#valeurs ul{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+#valeurs ul li{
+	list-style-type: none;
+	margin-bottom: 20px;
+	font-size: 3em;
+	font-family: sans-serif;
+}
+
+/* CITATION */
+
+#citation{
+	height: 50px;
+}
+
+#citation blockquote{
+	display: flex;
+	padding-top: 25px;
+	font-size: 30px;
+	justify-content: center;
+}
+
+
+/* A PROPOS */
+/* INTRODUCTION */
+
+#introduction{
+	display: flex;
+	justify-content: center;
+	width: 100%;
+	padding-top: 60px;
+}
+
+#introduction ul li{
+	list-style-type: none;
+	margin-top: 25px;
+	font-size: 2em;
+}
+
+/* PARCOURS SCOLAIRE */
+
+#parcours{
+	text-align: center;
+	margin-bottom: 60px;
+}
+
+
+#parcours table tr th, #parcours table tr td{
+	height: 50px;
+	border: 1px solid black;
+	border-collapse: collapse;
+}
+
+#parcours table tr th{
+	font-weight: bold;
+	font-size: 25px;
+}
+
+#parcours table tr td{
+	font-size: 20px;
+}
+
+/* ExPERIENCES PROFESSIONNELLES */
+
+#experiences div div p{
+	text-align: center;
+	margin-bottom: 30px;
+	margin-top: 30px;
+}
+
+#experiences div div ul li{
+	margin-left: 300px;
+	margin-bottom: 25px;
+	list-style: square;
+}
+
+/* COMPETENCES */
+
+#competences h2{
+	margin-top: 50px;
+}
+
+#competences h4{
+	text-align: center;
+	margin-bottom: 30px;
+	margin-top: 30px;
+	color: #0D47A1;
+}
+
+#competences ul li ul li{
+	margin-left: 300px;
+	margin-bottom: 25px;
+	list-style: square;
+}
+
+/* ACTIVITES */
+
+#activites h2{
+	margin-top: 50px;
+}
+#activites table{
+	text-align: center;
+	margin-bottom: 50px;
+}
+
+#activites table tr td{
+	width: 50%;
+}
+
+/* INTERETS */
+
+#interet div ul li{
+	margin-top: 30px;
+	margin-left: 300px;
+	margin-bottom: 25px;
+	list-style: square;
+}
+
+
+/* OBJECTIFS */
+
+#objectifs p{
+	width: 60%;
+	text-align: justify;
+	margin-left: 270px;
+}
+
+/* VOYAGES */
+#voyage h2{
+	margin-top: 35px;
+}
+
+#voyage h4{
+	text-align: center;
+	margin-bottom: 30px;
+	margin-top: 30px;
+	color: #0D47A1;
+}
+
+#voyage ul li ul li{
+	margin-left: 300px;
+	margin-bottom: 25px;
+	list-style: square;
+}
+
+#defits h2, #reflexion h2{
+	margin-top: 35px;
+}
+
+#defits h4{
+	text-align: center;
+	font-size: 25px;
+}
+
+#defits p, #reflexion p{
+	width: 60%;
+	text-align: justify;
+	margin-left: 270px;
+}
+
+
+/* BLOG */
+
+#blog{
+	width: 100%;
+	height: 1850px;
+}
+
+#blog img{
+	width: 100%;
+	height: 300px;
+}
+
+
+#contimage{
+	background-color: teal;
+}
+
+#blog a{
+	text-decoration: none;
+}
+
+#blog h2{
+	font-size: 60px;
+	font-family: sans-serif;
+	margin-bottom: 25px;
+	text-align: center;
+	padding-top: 100px;
+}
+
+#blog #nomprincipal{
+	background-color: teal;
+	color: white;
+}
+
+#blog #ligne img:hover{
+	background-color: teal;
+}
+
+#blog #ligne img{
+	background-color: white;
+}
+
+#blog ul li{
+	float: left;
+	list-style: none;
+	margin-left: 80px;
+	display: block;
+	width: 25%;
+	margin-bottom: 60px;
+	border: 1px solid black;
+	text-align: center;
+	box-shadow: 2px 2px black;
+}
+
+/* ARTICLES*/
+
+#card{
+	width: 80%;
+	height: 600px;
+	border: 2px solid black;
+	border-radius: 5px;
+	margin-left: 130px;
+	margin-top: 30px;
+	box-shadow: 2px 2px black;
+}
+
+#card #imgproduit{
+	float: left;
+	width: 50%;
+}
+
+#card #infoproduit{
+	float: right;
+	width: 50%;
+	height: 600px;
+	text-align: center;
+}
+
+#card #imgproduit img{
+	width: 100%;
+	height: 600px;
+}
+
+#infoproduit h2{
+	font-size: 2.5em;
+	text-transform: uppercase;
+	margin-bottom: 25px;
+}
+
+#infoproduit #infotitre{
+	background-color: teal;
+	color: #E3FDF2;
+	border-bottom: 1px solid white;
+	height: 300px;
+}
+
+#infoproduit h3{
+	margin-bottom: 20px;
+}
+
+#infoproduit #categorie{
+	font-size: 1.5em;
+}
+
+#infoproduit #infocorps{
+	text-align: justify;
+	background-color: #E3FDF2;
+	padding-top: 20px;
+	padding-left: 30px;
+	padding-right: 30px;
+	height: 280px;
+}
+
+/* CONTACT */
+
+#contact{
+	height: 1010px;
+	margin-bottom: 80px;
+}
+
+#contact h3{
+	text-align: center;
+	margin-left: 50px;
+	padding-top: 15px;
+	margin-bottom: 20px;
+	padding-top: 90px;
+}
+
+#contact form{
+	/* border: 1px solid black;*/
+	width: 40%;
+	height: 940px;
+	padding-left: 50px;
+	font-size: 1.4em;
+	margin-left: 350px;
+}
+
+#contact input{
+	border: 1px solid black;
+}
+
+
+#contact input, #contact select, #contact h4{
+	margin-top: 15px;
+	border-radius: 5px;
+}
+
+#contact #btn{
+	display: block;
+	margin-top: 15px;
+}
+
+#contact #btn input{
+	display: inline-block;
+	background-color: white;
+	height: 30px;
+	width: 100px;
+	font-size: 15px;
+	font-family: cursive;
+	background-color: teal;
+	color: white;
+	font-weight: bold;
+}
+
+#contact #btn #send{
+	float: left;
+}
+
+#contact #btn #reinit{
+	float: right;
+	margin-right: 160px;
+}
+
+/* JEU */
+
+#case{
+	padding-top: 150px;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	gap: 40px;
+}
+
+#mainjeu{
+	margin-bottom: 120px;
+}
+
+#case div div{
+	width: 100%;
+	height: 100%;
+	border-radius: 50px;
+}
+
+#case .case{
+	border: 1px solid black;
+	border-radius: 50px;
+	height: 250px;
+	width: 30%;
+}
+
+#divButton{
+	display: flex;
+	justify-content: center;
+}
+
+.sousDiv{
+	display: flex;
+	justify-content: center;
+}
+
+.case .sousDiv h3{
+	text-align: center;
+	margin-top: 20px;
+	display: block;
+	width: 100px;
+	height: 20px;
+	border-radius: 15px;
+	border: 1px solid black;
+}
+
+button{
+	margin-top: 60px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 50px;
+	border: 1px solid black;
+	border-radius: 10px;
+	width: 150px;
+}

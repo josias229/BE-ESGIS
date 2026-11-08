@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<title>Contact</title>
+</head>
+<body>
+
+	<header>
+		<div id="monlogo">
+			<img src="image/logo.jpg" alt="">
+		</div>
+
+		<div id="navlien">
+			<nav>
+				<ul>
+					<li class="lienprincipal">
+						<div>
+							<a class="lien" id="1" href="index.html">Accueil</a>
+							<ul class="sousmenu">
+								<li><a href="index.html#presentation">Présentation</a></li>
+								<li><a href="index.html#objectifs">Objectifs</a></li>
+								<li><a href="index.html#commentaires">Commentaires</a></li>
+								<li><a href="index.html#valeurs">Valeurs</a></li>
+								<li><a href="index.html#citation">Citation</a></li>
+							</ul>
+						</div>
+					</li>
+
+					<li class="lienprincipal">
+						<div>
+							<a class="lien" id="2" href="apropos.html">A Propos</a>
+							<ul class="sousmenu">
+								<li><a href="apropos.html#introduction">Introduction</a></li>
+								<li><a href="apropos.html#parcours">Parcours scolaire</a></li>
+								<li><a href="apropos.html#experiences">Expériences</a></li>
+								<li><a href="apropos.html#competences">Compétences et talents</a></li>
+								<li><a href="apropos.html#activites">Activités extrascolaires</a></li>
+								<li><a href="apropos.html#interet">Loisirs et passions</a></li>
+								<li><a href="apropos.html#objectifs">Objectifs de carrière</a></li>
+								<li><a href="apropos.html#voyage">Voyages et cultures</a></li>
+								<li><a href="apropos.html#defits">Défits rencontrées</a></li>
+								<li><a href="apropos.html#reflexion">Réflexions personnelles</a></li>
+							</ul>
+						</div>
+					</li>
+
+					<li class="lienprincipal">
+						<div>
+							<a class="lien" id="3" href="blog.html">Blog</a>
+							<ul class="sousmenu">
+								
+							</ul>
+						</div>
+					</li>
+
+					<li class="lienprincipal">
+						<div>
+							<a class="lien" id="4" href="contact.html">Contact</a>
+							<ul class="sousmenu">
+								
+							</ul>
+						</div>
+					</li>
+
+					<li class="lienprincipal">
+						<div>
+							<a class="lien" id="5" href="jeux.html">JEUX</a>
+							<ul class="sousmenu">
+								
+							</ul>
+						</div>
+					</li>
+				</ul>	
+			</nav>
+		</div>
+	</header>
+
+	<section id="contact">
+		<h3>Contactez-nous en remplissant ce formulaire</h3>
+		<form method="POST" id="myForm">
+			<label for="nom">Nom: </label>
+			<input class="input" type="text" placeholder="Votre nom" id="nom" name=""><br>
+			<span id="nom_error"></span>
+
+			<label  for="prenom">Prénoms: </label>
+			<input class="input" type="text" placeholder="Votre prénom" id="prenom" name=""><br>
+			<span id="prenom_error"></span>
+
+			<label for="age">Age: </label>
+			<input class="input" type="number" placeholder="Votre Age" id="age" name=""><br>
+			<span id="age_error"></span>
+
+			<label for="mail">Email: </label>
+			<input class="input" type="email" placeholder="Votre adresse mail" id="mail" name=""><br>
+			<span id="mail_error"></span>
+
+			<label for="telephone">Téléphone: </label>
+			<input class="input" type="tel" placeholder="Numéro de téléphone(facultatif)" id="telephone" name=""><br>
+
+			<label for="url">URL: </label>
+			<input class="input" type="url" placeholder="Lien vers votre profil(facultatif)" id="url" name=""><br>
+
+			<label for="sujet">Sujet :</label>
+			<select class="input" id="sujet">
+				<option value=""></option>
+				<option value="Achats">Achats</option>
+				<option value="Stage">Stage</option>
+				<option value="Renseignements">Renseignements</option>
+				<option value="Autres">Autres</option>
+			</select><br>
+			<span id="sujet_error"></span>
+
+			<h4>Vous contactez par :</h4>
+			<label for="tel2">Téléphone: </label>
+			<input type="radio" id="tel2" name="contacter" >
+
+			<label for="tel3">Email: </label>
+			<input type="radio" id="tel3" name="contacter" ><br>
+			<span id="contacter_error"></span>
+
+			
+
+			<h4>S'inscrire à une newsletter :</h4>
+			<label for="news1">Oui</label>
+			<input type="checkbox" name="news" id="news1">
+
+			<label for="news2">Non</label>
+			<input type="checkbox" name="news" id="news2">
+
+			<h4>Votre message ou demande</h4>
+			<textarea id="demande" cols="50" rows="10">	
+			</textarea>
+			<br>
+			<span id="demande_error"></span>
+
+			<label for="date">Date limite de disponibilité </label>
+			<input style="width: 300px; height: 30px;" type="date" id="date" name=""><br>
+
+			<label for="heure"> Heure préférée de contact </label><br>
+			<input style="width: 300px; height: 30px;" type="time" id="heure" name=""><br>
+
+			<div id="btn">
+				<div id="send">
+					<input type="submit" value="Envoyer" name="">
+				</div>
+				<div id="reinit">
+					<input type="reset" id="reset" value="Réinitialiser" name="">
+				</div>
+			</div>
+
+			<input type="text" id="valide">
+		</form>
+	</section>
+	<br>
+
+	<footer>
+		<div id="copyright">
+			Copyright - NOUKPO Vertueux
+		</div>
+
+		<div id="footerlink">
+			<nav>
+				<ul>
+					<li>
+						<a href="https://m.facebook.com/profile.php?id=100087765430465&name=xhp_nt__fb_action__open_user&__n=K" target="_blank"><img src="image/facebook.png" alt=""></a>
+					</li>
+
+					<li>
+						<a href="https://www.instagram.com" target="_blank"><img src="image/insta.png" alt=""></a>
+					</li>
+
+					<li>
+						<a href="https://twitter.com/" target="_blank"><img src="image/twitter.png" alt=""></a>
+					</li>
+
+					<li>
+						<a href="https://www.youtube.com/" target="_blank"><img src="image/youtube.png" alt=""></a>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</footer>
+
+	<script src="JS/script.js">
+		
+	</script>
+
+</body>
+</html>
